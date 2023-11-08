@@ -49,7 +49,7 @@ public class Board {
             }
         }
 
-        Ship newShip = new Ship(bowRow, bowColumn, length, horizontal);
+        Ship newShip = new Ship("boat", bowRow, bowColumn, length, horizontal);
         ships.add(newShip);
 
         for (int i = 0; i < length; i++) {
