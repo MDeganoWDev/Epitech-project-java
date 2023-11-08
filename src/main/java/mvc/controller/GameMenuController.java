@@ -18,6 +18,8 @@ public class GameMenuController {
     private class StartGameListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            GameController gameController = new GameController(10);
+            gameController.startNewGame();
             // Reagir au clic sur "Start Game"
             // Lancer le jeu principal à partir d'ici
             // Par exemple, créez et affichez une nouvelle vue de jeu
@@ -38,12 +40,5 @@ public class GameMenuController {
         public void actionPerformed(ActionEvent e) {
             // Afficher des informations sur les crédits du jeu
         }
-    }
-
-    public static void main(String[] args) {
-        GameMenuView menuView = new GameMenuView();
-        GameMenuController menuController = new GameMenuController(menuView);
-
-        menuView.display();
     }
 }
