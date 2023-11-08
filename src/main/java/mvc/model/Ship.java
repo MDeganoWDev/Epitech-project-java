@@ -10,16 +10,10 @@ public class Ship {
     private boolean horizontal;
     private boolean[] hit;
 
-    public Ship(String name, int bowRow, int bowColumn, int length, boolean horizontal) {
+    public Ship(String name, int length) {
         this.name = name;
-
-        this.bowRow = bowRow;
-        this.bowColumn = bowColumn;
         this.length = length;
-        this.horizontal = horizontal;
-        this.hit = new boolean[length]; 
     }
-
     public boolean shootAt(int row, int column) {
         if(horizontal) {
             if(row == this.bowRow && column >= this.bowColumn && column < this.bowColumn + length) {
@@ -39,5 +33,36 @@ public class Ship {
             if (!touch) return false;
         }
         return true;
+    }
+    public String getName() {
+        return this.name;
+    }
+    public int getLength() {
+        return this.length;
+    }
+    public int getBowRow() {
+        return this.bowRow;
+    }
+    public int getBowColumn() {
+        return this.bowColumn;
+    }
+    public boolean isHorizontal() {
+        return this.horizontal;
+    }
+    public boolean[] getHit() {
+        return this.hit;
+    }
+    public void setBowRow(int row) {
+        this.bowRow = row;
+    }
+    public void setBowColumn(int column) {
+        this.bowColumn = column;
+    }
+    public void setHorizontal(boolean horizontal) {
+        this.horizontal = horizontal;
+    }
+    public boolean[] setHit(boolean[] hit) {
+        this.hit = hit;
+        return this.hit;
     }
 }

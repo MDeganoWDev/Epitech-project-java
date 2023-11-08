@@ -39,11 +39,4 @@ public class GameMenuController {
             // Afficher des informations sur les crédits du jeu
         }
     }
-
-    public static void main(String[] args) {
-        GameMenuView menuView = new GameMenuView();
-        GameMenuController menuController = new GameMenuController(menuView);
-
-        menuView.display();
-    }
 }
