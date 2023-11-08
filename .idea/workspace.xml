@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/BigMom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Strawhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "addingFactionAndShip",
     "last_opened_file_path": "//wsl$/Ubuntu/home/dmatteo/Linux/Pool-java/Project/Bataille navale/dist",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

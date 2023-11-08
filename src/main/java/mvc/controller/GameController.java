@@ -1,21 +1,24 @@
 package main.java.mvc.controller;
 
 import main.java.mvc.model.Board;
+import main.java.mvc.model.Faction;
+import main.java.mvc.model.Player;
 import main.java.mvc.view.MainFrame;
 import javax.swing.*;
 
 public class GameController {
-    private Board board;
+    private int boardSize;
     private MainFrame mainFrame;
     private boolean isGameInProgress;
 
-    public GameController(int size) {
-        board = new Board(size);
+    public GameController(int board) {
+        this.boardSize = board;
         mainFrame = new MainFrame(this);
         isGameInProgress = false;
     }
-    public Board getBoard() {
-        return board;
+    public void selectFaction(String name, Faction faction, Faction faction2) {
+        Player player1 = new Player(name, faction, boardSize);
+        Player player2 = new Player("Player 2",faction2, boardSize);
     }
     public void startNewGame() {
         isGameInProgress = true;

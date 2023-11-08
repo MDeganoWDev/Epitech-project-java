@@ -49,9 +49,6 @@ public class Board {
             }
         }
 
-        Ship newShip = new Ship("boat", bowRow, bowColumn, length, horizontal);
-        ships.add(newShip);
-
         for (int i = 0; i < length; i++) {
             int currentRow = horizontal ? bowRow : bowRow + i;
             int currentColumn = horizontal ? bowColumn + i : bowColumn;
