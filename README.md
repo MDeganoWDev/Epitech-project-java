@@ -7,12 +7,10 @@ Bienvenue sur le projet de création de notre jeux Bataille Navale en Java.
 ## Consigne
 - Faire un jeux 2D en 2 semaines
 - Utiliser Java
-- Utiliser Swing
 
 ## Prérequis
-- Java 21
-- JDK 21
-- Swing 21
+- Java version "19.0.2"
+- JDK version 21
 
 ## Installation
 - Télécharger le projet
