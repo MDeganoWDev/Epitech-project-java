@@ -9,5 +9,7 @@ public class Application {
             GameController gameController = new GameController(10);
             gameController.startNewGame();
         });
+
     }
+    
 }
