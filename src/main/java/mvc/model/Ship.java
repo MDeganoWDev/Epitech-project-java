@@ -8,18 +8,18 @@ public class Ship {
     private int bowColumn;
     private int length;
     private boolean horizontal;
-    private boolean[] hit; // Array to store hits
+    private boolean[] hit;
 
     public Ship(String name, int bowRow, int bowColumn, int length, boolean horizontal) {
         this.name = name;
+
         this.bowRow = bowRow;
         this.bowColumn = bowColumn;
         this.length = length;
         this.horizontal = horizontal;
-        this.hit = new boolean[length]; // All false initially
+        this.hit = new boolean[length]; 
     }
 
-    // Registers a shot at the ship and returns whether it was a hit
     public boolean shootAt(int row, int column) {
         if(horizontal) {
             if(row == this.bowRow && column >= this.bowColumn && column < this.bowColumn + length) {
@@ -34,14 +34,10 @@ public class Ship {
         }
         return false;
     }
-
-    // Check if the ship is sunk
     public boolean isSunk() {
         for (boolean touch : hit) {
-            if (!touch) return false; // If any part is not hit, the ship is not sunk
+            if (!touch) return false;
         }
-        return true; // All parts are hit, the ship is sunk
+        return true;
     }
-
-    // Getters and setters omitted for brevity...
 }
