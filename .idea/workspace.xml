@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="" />
+    <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GridBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/PlaceShipPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GameMenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/ShipTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "addingFactionAndShip",
-    "last_opened_file_path": "//wsl$/Ubuntu/home/dmatteo/Linux/Pool-java/Project/Bataille navale/dist",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;updatingTheViews&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/dmatteo/Linux/Pool-java/Project/Bataille navale/dist&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu\home\dmatteo\Linux\Pool-java\Project\Bataille navale\dist" />
@@ -59,10 +75,17 @@
       <recent name="\\wsl$\Ubuntu\home\dmatteo\Linux\Pool-java\Project\Bataille navale\src\main\java\mvc\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\dmatteo\Linux\Pool-java\Project\Bataille navale\src\main\resources" />
       <recent name="\\wsl$\Ubuntu\home\dmatteo\Linux\Pool-java\Project\Bataille navale\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.java.mvc.model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.GamePanel">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -89,14 +112,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GamePanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.mvc.view.GamePanel" />
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.mvc.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.mvc.view.MainFrame" />
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.mvc.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GamePanel" />
+        <item itemvalue="Application.MainFrame" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.GameController" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\DMatt\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="" />
@@ -107,6 +161,7 @@
       <workItem from="1699351672234" duration="1271000" />
       <workItem from="1699353315717" duration="12551000" />
       <workItem from="1699432540437" duration="6622000" />
+      <workItem from="1699603447974" duration="18256000" />
     </task>
     <servers />
   </component>

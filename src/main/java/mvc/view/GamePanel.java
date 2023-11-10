@@ -1,71 +1,52 @@
 package main.java.mvc.view;
-
-import main.java.mvc.controller.GameController;
-import main.java.mvc.model.Board;
+import main.java.mvc.model.*;
 
 import javax.swing.*;
+import java.util.List;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+
 
 public class GamePanel extends JPanel {
-    private GameController gameController;
-    private int cellSize;
+    private Board offensiveBoard1;
+    private Board offensiveBoard2;
+    private Board defensiveBoard1;
+    private Board defensiveBoard2;
+    private Player player1;
+    private Player player2;
+    private List<Ship> shipsPlayer1;
+    private List<Ship> shipsPlayer2;
 
-    public GamePanel(GameController gameController, int cellSize) {
-        this.gameController = gameController;
-        this.cellSize = cellSize;
-        int boardSize = gameController.getBoard().getRows();
-        this.setPreferredSize(new Dimension(boardSize * cellSize, boardSize * cellSize));
-        this.setBackground(Color.WHITE);
-        addMouseListener(new MouseAdapter() {
+    public GamePanel(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
+        this.shipsPlayer1 = player1.getFaction().getShips();
+        this.shipsPlayer2 = player2.getFaction().getShips();
+        this.offensiveBoard1 = player1.getOwnBoard();
+        this.offensiveBoard2 = player2.getOwnBoard();
+        this.defensiveBoard1.placeAllShips(shipsPlayer1);
+        this.defensiveBoard2.placeAllShips(shipsPlayer2);
+        this.defensiveBoard1 = player1.getTrackingBoard();
+        this.defensiveBoard2 = player2.getTrackingBoard();
+        setPreferredSize(new Dimension(1200, 800));
+        setBackground(Color.BLUE);
+        setLayout(new BorderLayout());
+        GridBoard offensiveGrid1 = new GridBoard(offensiveBoard1);
+        GridBoard offensiveGrid2 = new GridBoard(offensiveBoard2);
+        GridBoard defensiveGrid1 = new GridBoard(defensiveBoard1);
+        GridBoard defensiveGrid2 = new GridBoard(defensiveBoard2);
+    }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                int row = e.getY() / cellSize;
-                int column = e.getX() / cellSize;
+            public void run() {
+                Strawhat strawhat = new Strawhat();
+                BigMom bigMom = new BigMom();
+                Player player1 = new Player("Player 1", strawhat, 10);
+                Player player2 = new Player("Player 2", bigMom, 10);
 
-                if (SwingUtilities.isLeftMouseButton(e)) {
-                    gameController.placeShip(row, column, 1, true);
-                } else if (SwingUtilities.isRightMouseButton(e)) {
-                    gameController.takeShot(row, column);
-                }
-
-                repaint();
+                MainFrame mainFrame = new MainFrame(player1, player2);
+                mainFrame.setVisible(true);
             }
         });
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        Board board = gameController.getBoard();
-        int boardSize = board.getRows();
-
-        for (int row = 0; row < boardSize; row++) {
-            for (int col = 0; col < boardSize; col++) {
-                int x = col * cellSize;
-                int y = row * cellSize;
-                g.setColor(Color.LIGHT_GRAY);
-                g.drawRect(x, y, cellSize, cellSize);
-
-                switch (board.getCellStatus(row, col)) {
-                    case SHIP:
-                        g.setColor(Color.GRAY);
-                        g.fillRect(x + 1, y + 1, cellSize - 1, cellSize - 1);
-                        break;
-                    case HIT:
-                        g.setColor(Color.RED);
-                        g.fillRect(x + 1, y + 1, cellSize - 1, cellSize - 1);
-                        break;
-                    case MISS:
-                        g.setColor(Color.BLUE);
-                        g.fillRect(x + 1, y + 1, cellSize - 1, cellSize - 1);
-                        break;
-                    case EMPTY:
-                    default:
-                        break;
-                }
-            }
-        }
     }
 }

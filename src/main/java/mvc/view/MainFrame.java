@@ -1,49 +1,44 @@
 package main.java.mvc.view;
 
-import main.java.mvc.controller.GameController;
+import main.java.mvc.model.BigMom;
+import main.java.mvc.model.Player;
+import main.java.mvc.model.Strawhat;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 public class MainFrame extends JFrame {
-    private GameController gameController;
-    private GamePanel gamePanel;
 
-    public MainFrame(GameController gameController) {
-        this.gameController = gameController;
+    private Player player1;
+    private Player player2;
+    public MainFrame(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
         initializeUI();
     }
 
     private void initializeUI() {
         setTitle("Battleship Game");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(600, 600);
+        setSize(1000, 800);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        gamePanel = new GamePanel(gameController, 30);
-        add(gamePanel, BorderLayout.CENTER);
+        // Add a button to start a new game
+        JButton startGameButton = new JButton("Start New Game");
 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu gameMenu = new JMenu("Game");
-        JMenuItem newGame = new JMenuItem("New Game");
-        newGame.addActionListener(new ActionListener() {
-            @Override
+        startGameButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                gameController.startNewGame();
+                getContentPane().removeAll();
+                getContentPane().add(new GamePanel(player1, player2));
+                getContentPane().revalidate();
+                getContentPane().repaint();
             }
         });
 
-        gameMenu.add(newGame);
-        menuBar.add(gameMenu);
-        setJMenuBar(menuBar);
-
-        pack();
-        setLocationRelativeTo(null);
-        setVisible(true);
+        setLayout(new BorderLayout());
+        add(startGameButton, BorderLayout.SOUTH);
     }
 
-    public void repaintBoard() {
-        gamePanel.repaint();
-    }
+
 }
