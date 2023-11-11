@@ -1,6 +1,4 @@
-package main.java.mvc.model.Faction;
-
-import main.java.mvc.model.Ship.Ship;
+package main.java.mvc.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +7,6 @@ public class Faction {
     private String name;
     private List<Ship> ships;
     public Faction(String name) {
-        this.ships = new ArrayList<>();
         this.name = name;
         this.ships = new ArrayList<>();
     }

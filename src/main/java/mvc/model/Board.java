@@ -1,7 +1,5 @@
 package main.java.mvc.model;
 
-import main.java.mvc.model.Ship.Ship;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -60,33 +58,38 @@ public class Board {
         }
         return true;
     }
-    public void placeAllShips(List<Ship> shipsToFaction) {
+    public boolean placeAllShips(List<Ship> shipsToFaction) {
         for (Ship ship : shipsToFaction) {
             if (!placeShipRandomly(ship)) {
-                return;
+                return false; // If unable to place a ship, return false
             }
         }
+        return true; // All ships placed successfully
     }
 
-    private boolean placeShipRandomly(Ship ship) {
+    // Tries to place a ship at a random location, checking if it's possible
+    public boolean placeShipRandomly(Ship ship) {
         Random random = new Random();
         boolean placed = false;
-        int maxAttempts = 100;
+        int maxAttempts = 100; // Prevent infinite loop by limiting attempts
 
         while (!placed && maxAttempts > 0) {
+            // Generate a random starting position and orientation
             int bowRow = random.nextInt(this.rows);
             int bowColumn = random.nextInt(this.columns);
             boolean horizontal = random.nextBoolean();
 
+            // Attempt to place the ship at the generated location
             placed = placeShip(bowRow, bowColumn, ship.getLength(), horizontal);
 
             if (placed) {
                 ship.setBowRow(bowRow);
                 ship.setBowColumn(bowColumn);
                 ship.setHorizontal(horizontal);
-                ship.setHit(new boolean[ship.getLength()]);
-                this.ships.add(ship);
+                ship.setHit(new boolean[ship.getLength()]); // Initialize the hit array
+                this.ships.add(ship); // Add the ship to the list if successfully placed
             }
+
             maxAttempts--;
         }
 
@@ -100,6 +103,16 @@ public class Board {
                 if (ship.shootAt(row, col)) {
                     updateCellStatus(row, col, Status.HIT);
                     ship.getHit()[ship.isHorizontal() ? col - ship.getBowColumn() : row - ship.getBowRow()] = true;
+    
+                    if (ship.isSunk()) {
+                        // Si le navire est coulé, mettez à jour les cellules du plateau en conséquence
+                        for (int i = 0; i < ship.getLength(); i++) {
+                            int currentRow = ship.isHorizontal() ? ship.getBowRow() : ship.getBowRow() + i;
+                            int currentCol = ship.isHorizontal() ? ship.getBowColumn() + i : ship.getBowColumn();
+                            updateCellStatus(currentRow, currentCol, Status.HIT);
+                        }
+                    }
+    
                     return true;
                 }
             }
@@ -119,7 +132,7 @@ public class Board {
                 return false; // Si un navire n'est pas coulé, retourne false
             }
         }
-        return true;
+        return true; // Tous les navires sont coulés
     }
     public void updateCellStatus(int row, int col, Status status) {
         grid[row][col] = status;
@@ -131,8 +144,5 @@ public class Board {
             }
         }
         ships.clear();
-    }
-    public List<Ship> getShips() {
-        return this.ships;
     }
 }
