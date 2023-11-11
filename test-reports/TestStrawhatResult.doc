@@ -1,0 +1,15 @@
+%TESTC  3 v2
+%TSTTREE1,test.java.mvc.model.TestStrawhat,true,3,false,-1,test.java.mvc.model.TestStrawhat,,
+%TSTTREE2,testGetShips(test.java.mvc.model.TestStrawhat),false,1,false,-1,testGetShips(test.java.mvc.model.TestStrawhat),,
+%TSTTREE3,testAddShip(test.java.mvc.model.TestStrawhat),false,1,false,-1,testAddShip(test.java.mvc.model.TestStrawhat),,
+%TSTTREE4,testGetName(test.java.mvc.model.TestStrawhat),false,1,false,-1,testGetName(test.java.mvc.model.TestStrawhat),,
+%TESTS  2,testGetShips(test.java.mvc.model.TestStrawhat)
+
+%TESTE  2,testGetShips(test.java.mvc.model.TestStrawhat)
+
+%TESTS  3,testAddShip(test.java.mvc.model.TestStrawhat)
+%TESTE  3,testAddShip(test.java.mvc.model.TestStrawhat)
+%TESTS  4,testGetName(test.java.mvc.model.TestStrawhat)
+%TESTE  4,testGetName(test.java.mvc.model.TestStrawhat)
+
+%RUNTIME42

@@ -1,5 +1,6 @@
 package test.java.mvc.model;
 
+import main.java.mvc.model.Ship;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

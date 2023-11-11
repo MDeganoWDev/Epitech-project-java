@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/BigMom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Strawhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatailleNavale.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BatailleNavale.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/BigMom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/BigMom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Strawhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Strawhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/ShipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/ShipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +47,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "//wsl$/Ubuntu/home/dmatteo/Linux/Pool-java/Project/Bataille navale/dist",
+    "git-widget-placeholder": "createTest",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/talal/POOL-JAVA/Projet/lib/junit-4.13.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.language",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Debugger_Data_Views_Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,7 +73,7 @@
       <recent name="\\wsl$\Ubuntu\home\dmatteo\Linux\Pool-java\Project\Bataille navale\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.TestFaction.testBonjour">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -103,8 +100,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestFaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.mvc.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.mvc.model" />
+      <option name="MAIN_CLASS_NAME" value="test.java.mvc.model.TestFaction" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFaction.testBonjour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.mvc.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.mvc.model" />
+      <option name="MAIN_CLASS_NAME" value="test.java.mvc.model.TestFaction" />
+      <option name="METHOD_NAME" value="testBonjour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.mvc.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.mvc.model" />
+      <option name="MAIN_CLASS_NAME" value="test.java.mvc.model.TestShip" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestFaction.testBonjour" />
+        <item itemvalue="JUnit.TestFaction" />
+        <item itemvalue="JUnit.TestShip" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.GameController" />
       </list>
@@ -121,6 +167,10 @@
       <workItem from="1699351672234" duration="1271000" />
       <workItem from="1699353315717" duration="12551000" />
       <workItem from="1699432540437" duration="6622000" />
+      <workItem from="1699527321276" duration="1411000" />
+      <workItem from="1699528782287" duration="547000" />
+      <workItem from="1699529558003" duration="59000" />
+      <workItem from="1699529721938" duration="370000" />
     </task>
     <servers />
   </component>

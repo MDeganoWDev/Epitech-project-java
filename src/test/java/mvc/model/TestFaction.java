@@ -1,6 +1,7 @@
 package test.java.mvc.model;
 
 import main.java.mvc.model.Faction;
+import main.java.mvc.model.Ship;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,6 +21,11 @@ public class TestFaction {
     @Test
     public void testGetName() {
         assertEquals("Test Faction", faction.getName());
+    }
+
+    @Test
+    public void testBonjour(){
+        System.out.println("Bonjour");
     }
 
     @Test
