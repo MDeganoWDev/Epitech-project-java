@@ -10,7 +10,7 @@ public class Board {
     }
     private int rows;
     private int columns;
-    private List<Ship> ships = new ArrayList<>();
+    public List<Ship> ships = new ArrayList<>();
     private Status[][] grid;
     public Board(int size) {
         if (size < 10) {
@@ -97,7 +97,7 @@ public class Board {
     }
     public boolean takeShot(int row, int col) {
         Status status = grid[row][col];
-
+    
         if (status == Status.SHIP) {
             for (Ship ship : ships) {
                 if (ship.shootAt(row, col)) {
@@ -118,7 +118,9 @@ public class Board {
     }
     public boolean areAllShipsSunk() {
         for (Ship ship : ships) {
-            if (!ship.isSunk()) return false;
+            if (!ship.isSunk()) {
+                return false; // Si un navire n'est pas coulé, retourne false
+            }
         }
         return true;
     }
@@ -137,4 +139,3 @@ public class Board {
         return this.ships;
     }
 }
-

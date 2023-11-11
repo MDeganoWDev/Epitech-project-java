@@ -84,7 +84,7 @@
       <recent name="test.java.mvc.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.TestFaction.testBonjour">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -139,6 +139,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestFaction.testBonjour" />
+        <item itemvalue="JUnit.TestFaction" />
+        <item itemvalue="JUnit.TestShip" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.GamePanel" />
         <item itemvalue="Application.MainFrame" />

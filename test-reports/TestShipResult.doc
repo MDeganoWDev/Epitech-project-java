@@ -1,0 +1,12 @@
+%TESTC  2 v2
+%TSTTREE1,test.java.mvc.model.TestShip,true,2,false,-1,test.java.mvc.model.TestShip,,
+%TSTTREE2,testIsSunk(test.java.mvc.model.TestShip),false,1,false,-1,testIsSunk(test.java.mvc.model.TestShip),,
+%TSTTREE3,testShootAt(test.java.mvc.model.TestShip),false,1,false,-1,testShootAt(test.java.mvc.model.TestShip),,
+%TESTS  2,testIsSunk(test.java.mvc.model.TestShip)
+
+%TESTE  2,testIsSunk(test.java.mvc.model.TestShip)
+
+%TESTS  3,testShootAt(test.java.mvc.model.TestShip)
+%TESTE  3,testShootAt(test.java.mvc.model.TestShip)
+
+%RUNTIME45
