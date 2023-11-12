@@ -1,21 +1,15 @@
 package main.java.mvc.view;
 
-import main.java.mvc.model.BigMom;
-import main.java.mvc.model.Player;
-import main.java.mvc.model.Strawhat;
-
+import main.java.mvc.controller.GameController;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class MainFrame extends JFrame {
 
-    private Player player1;
-    private Player player2;
-    public MainFrame(Player player1, Player player2) {
-        this.player1 = player1;
-        this.player2 = player2;
+    public MainFrame() {
         initializeUI();
+        setVisible(true);
     }
 
     private void initializeUI() {
@@ -26,19 +20,13 @@ public class MainFrame extends JFrame {
 
         // Add a button to start a new game
         JButton startGameButton = new JButton("Start New Game");
-
         startGameButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                getContentPane().removeAll();
-                getContentPane().add(new GamePanel(player1, player2));
-                getContentPane().revalidate();
-                getContentPane().repaint();
+                GameController.selectFactionView();
             }
         });
 
         setLayout(new BorderLayout());
         add(startGameButton, BorderLayout.SOUTH);
     }
-
-
 }

@@ -1,34 +1,30 @@
 package main.java.mvc.controller;
 
-import main.java.mvc.model.Board;
 import main.java.mvc.model.Faction;
 import main.java.mvc.model.Player;
 import main.java.mvc.view.GamePanel;
 import main.java.mvc.view.MainFrame;
-import main.java.mvc.view.PlaceShipPanel;
+import main.java.mvc.view.SelectFactionPanel;
+import main.java.mvc.view.ShipPlacementPanel;
+
 
 import javax.swing.*;
 
 public class GameController {
     public enum GameState {
         NOT_STARTED,
+        SELECTING_FACTIONS,
         PLACING_SHIPS,
         GAME_IN_PROGRESS,
         GAME_OVER
     }
 
-    private Player player1;
-    private Player player2;
-    private MainFrame mainFrame;
-    private PlaceShipPanel placeShipPanel;
-    private GameState gameState;
+    private static MainFrame mainFrame;
+    private static GameState gameState;
 
-    public GameController(int boardSize, Faction factionPlayer1, Faction factionPlayer2) {
-        this.player1 = new Player("Player 1", factionPlayer1, boardSize);
-        this.player2 = new Player("Player 2", factionPlayer2, boardSize);
-        this.mainFrame = new MainFrame(player1, player2);
-        this.placeShipPanel = new PlaceShipPanel(player1, player2);
-        this.gameState = GameState.NOT_STARTED;
+    public GameController() {
+        gameState = GameState.NOT_STARTED;
+        initializeGame();
     }
 
     public void initializeGame() {
@@ -37,51 +33,49 @@ public class GameController {
                     "Game In Progress", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        // You can call a method here to display a GUI for ship placement
-        // or place ships automatically for simplicity.
-        placeShipsForPlayer(player1);
-        placeShipsForPlayer(player2);
+        mainFrame = new MainFrame();
+
+        System.out.println("Game initialized");
+        System.out.println("Game status : " + gameState);
+    }
+    public static void switchPanel(JPanel panel) {
+        mainFrame.getContentPane().removeAll();
+        mainFrame.getContentPane().add(panel);
+        mainFrame.getContentPane().revalidate();
+        mainFrame.getContentPane().repaint();
+    }
+    public static void selectFactionView(){
+        gameState = GameState.SELECTING_FACTIONS;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Switching to faction selection view");
+
+        switchPanel(new SelectFactionPanel());
+    }
+    public static void shipPlacementView(Player player){
+        gameState = GameState.PLACING_SHIPS;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Player " + player.getName() + " is placing ships");
+
+        switchPanel(new ShipPlacementPanel(player));
+    }
+    public static void gameView(){
         gameState = GameState.GAME_IN_PROGRESS;
-        mainFrame.startGame();
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Game started");
+
+        switchPanel(new GamePanel());
     }
+    public static void selectFaction (Faction faction1, Faction faction2, int gridSize){
+        Player player1 = new Player("Player 1", faction1, gridSize);
+        Player player2 = new Player("player 2", faction2, gridSize);
 
-    private void placeShipsForPlayer(Player player) {
-        this.placeShipPanel.
+        System.out.println("Player 1 : name is " + player1.getName() + ", faction is " + player1.getFaction().getName());
+        System.out.println("Player 2 : name is " + player2.getName() + ", faction is " + player2.getFaction().getName());
+        System.out.println("Grid size : " + gridSize);
 
-    }
-
-    public boolean takeTurn(Player player, int row, int col) {
-        if (gameState != GameState.GAME_IN_PROGRESS) {
-            JOptionPane.showMessageDialog(mainFrame, "No game in progress. Start a new game first.",
-                    "No Game", JOptionPane.WARNING_MESSAGE);
-            return false;
-        }
-
-        Player opponent = (player == player1) ? player2 : player1;
-        boolean hit = opponent.getOwnBoard().takeShot(row, col);
-        Board.Status status = hit ? Board.Status.HIT : Board.Status.MISS;
-        player.getTrackingBoard().updateCellStatus(row, col, status);
-
-        // After a turn, check if the game is over
-        if (isGameOver()) {
-            gameState = GameState.GAME_OVER;
-            String winner = (player == player1 && player2.getOwnBoard().areAllShipsSunk()) ? "Player 1" : "Player 2";
-            JOptionPane.showMessageDialog(mainFrame, winner + " wins!", "Game Over", JOptionPane.INFORMATION_MESSAGE);
-            mainFrame.endGame();
-        }
-
-        return hit;
-    }
-
-    public boolean isGameOver() {
-        return player1.getOwnBoard().areAllShipsSunk() || player2.getOwnBoard().areAllShipsSunk();
-    }
-
-    public void resetGame() {
-        // Reset boards and game state
-        player1.reset();
-        player2.reset();
-        gameState = GameState.NOT_STARTED;
-        mainFrame.resetGame();
+        shipPlacementView(player1);
     }
 }

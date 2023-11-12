@@ -133,5 +133,8 @@ public class Board {
         }
         ships.clear();
     }
+    public List<Ship> getShips() {
+        return this.ships;
+    }
 }
 
