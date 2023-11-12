@@ -10,7 +10,7 @@ public class Board {
     }
     private int rows;
     private int columns;
-    private List<Ship> ships = new ArrayList<>();
+    public List<Ship> ships = new ArrayList<>();
     private Status[][] grid;
     public Board(int size) {
         if (size < 10) {
@@ -68,7 +68,7 @@ public class Board {
     }
 
     // Tries to place a ship at a random location, checking if it's possible
-    private boolean placeShipRandomly(Ship ship) {
+    public boolean placeShipRandomly(Ship ship) {
         Random random = new Random();
         boolean placed = false;
         int maxAttempts = 100; // Prevent infinite loop by limiting attempts
@@ -97,12 +97,22 @@ public class Board {
     }
     public boolean takeShot(int row, int col) {
         Status status = grid[row][col];
-
+    
         if (status == Status.SHIP) {
             for (Ship ship : ships) {
                 if (ship.shootAt(row, col)) {
                     updateCellStatus(row, col, Status.HIT);
                     ship.getHit()[ship.isHorizontal() ? col - ship.getBowColumn() : row - ship.getBowRow()] = true;
+    
+                    if (ship.isSunk()) {
+                        // Si le navire est coulé, mettez à jour les cellules du plateau en conséquence
+                        for (int i = 0; i < ship.getLength(); i++) {
+                            int currentRow = ship.isHorizontal() ? ship.getBowRow() : ship.getBowRow() + i;
+                            int currentCol = ship.isHorizontal() ? ship.getBowColumn() + i : ship.getBowColumn();
+                            updateCellStatus(currentRow, currentCol, Status.HIT);
+                        }
+                    }
+    
                     return true;
                 }
             }
@@ -118,9 +128,11 @@ public class Board {
     }
     public boolean areAllShipsSunk() {
         for (Ship ship : ships) {
-            if (!ship.isSunk()) return false;
+            if (!ship.isSunk()) {
+                return false; // Si un navire n'est pas coulé, retourne false
+            }
         }
-        return true;
+        return true; // Tous les navires sont coulés
     }
     public void updateCellStatus(int row, int col, Status status) {
         grid[row][col] = status;
@@ -137,4 +149,3 @@ public class Board {
         return this.ships;
     }
 }
-
