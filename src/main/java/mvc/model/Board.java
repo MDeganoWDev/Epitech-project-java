@@ -1,5 +1,6 @@
 package main.java.mvc.model;
 
+import main.java.mvc.model.Ship.Ship;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
