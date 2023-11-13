@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/ShipPlacementPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GridBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/PlaceShipPanel.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7c01072b-0ef2-406f-a0b8-5fe7d97f0d63" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "updatingTheViews",
+    "git-widget-placeholder": "Rebasing master",
     "last_opened_file_path": "//wsl$/Ubuntu/home/dmatteo/Linux/Pool-java/Project/Bataille navale/dist",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,7 +70,7 @@
       <recent name="test.java.mvc.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestFaction.testBonjour">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -139,9 +125,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestFaction.testBonjour" />
-        <item itemvalue="JUnit.TestFaction" />
-        <item itemvalue="JUnit.TestShip" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.GamePanel" />
         <item itemvalue="Application.MainFrame" />
@@ -172,5 +155,8 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
