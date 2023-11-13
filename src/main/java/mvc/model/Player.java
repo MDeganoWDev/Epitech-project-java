@@ -1,4 +1,7 @@
 package main.java.mvc.model;
+
+import main.java.mvc.model.Faction.Faction;
+
 public class Player {
     private String name;
     private Faction faction;

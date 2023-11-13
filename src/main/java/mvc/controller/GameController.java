@@ -1,6 +1,6 @@
 package main.java.mvc.controller;
 
-import main.java.mvc.model.Faction;
+import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.model.Player;
 import main.java.mvc.view.GamePanel;
 import main.java.mvc.view.MainFrame;
@@ -21,6 +21,8 @@ public class GameController {
 
     private static MainFrame mainFrame;
     private static GameState gameState;
+    private static Player player1;
+    private static Player player2;
 
     public GameController() {
         gameState = GameState.NOT_STARTED;
@@ -52,13 +54,14 @@ public class GameController {
 
         switchPanel(new SelectFactionPanel());
     }
-    public static void shipPlacementView(Player player){
+    public static void shipPlacementView(){
         gameState = GameState.PLACING_SHIPS;
 
         System.out.println("Game status : " + gameState);
-        System.out.println("Player " + player.getName() + " is placing ships");
+        System.out.println("Player " + player1.getName() + " is placing ships");
 
-        switchPanel(new ShipPlacementPanel(player));
+        player2.getOwnBoard().placeAllShips(player2.getFaction().getShips());
+        switchPanel(new ShipPlacementPanel(player1));
     }
     public static void gameView(){
         gameState = GameState.GAME_IN_PROGRESS;
@@ -66,16 +69,16 @@ public class GameController {
         System.out.println("Game status : " + gameState);
         System.out.println("Game started");
 
-        switchPanel(new GamePanel());
+        switchPanel(new GamePanel(player1, player2));
     }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize){
-        Player player1 = new Player("Player 1", faction1, gridSize);
-        Player player2 = new Player("player 2", faction2, gridSize);
+        player1 = new Player("Player 1", faction1, gridSize);
+        player2 = new Player("player 2", faction2, gridSize);
 
         System.out.println("Player 1 : name is " + player1.getName() + ", faction is " + player1.getFaction().getName());
         System.out.println("Player 2 : name is " + player2.getName() + ", faction is " + player2.getFaction().getName());
         System.out.println("Grid size : " + gridSize);
 
-        shipPlacementView(player1);
+        shipPlacementView();
     }
 }

@@ -1,8 +1,8 @@
 package main.java.mvc.view.component;
 
-import main.java.mvc.model.BigMom;
-import main.java.mvc.model.Faction;
-import main.java.mvc.model.Strawhat;
+import main.java.mvc.model.Faction.BigMom;
+import main.java.mvc.model.Faction.Faction;
+import main.java.mvc.model.Faction.Strawhat;
 
 import javax.swing.*;
 import java.awt.*;

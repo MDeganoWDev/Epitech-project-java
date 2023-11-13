@@ -1,6 +1,11 @@
-package main.java.mvc.model;
+package main.java.mvc.model.Faction;
 
-public class Strawhat extends Faction{
+import main.java.mvc.model.Ship.Ship1;
+import main.java.mvc.model.Ship.Ship2;
+import main.java.mvc.model.Ship.Ship3;
+import main.java.mvc.model.Ship.Ship4;
+
+public class Strawhat extends Faction {
     public Strawhat(){
         super("Strawhat");
         super.addShip(new Ship1("Franky battle 1"));

@@ -3,13 +3,12 @@ package main.java.mvc.view;
 import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Board;
 import main.java.mvc.model.Player;
-import main.java.mvc.model.Ship;
+import main.java.mvc.model.Ship.Ship;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.List;
 
 public class ShipPlacementPanel extends JPanel {
     private Player player;
@@ -18,6 +17,7 @@ public class ShipPlacementPanel extends JPanel {
     private JList<Ship> shipList;
     private DefaultListModel<Ship> shipListModel;
     private JPanel buttonPanel;
+    private JButton placeAllShipsButton;
     private JButton resetButton;
     private JButton startGameButton;
     private JButton toggleOrientationButton;
@@ -50,9 +50,21 @@ public class ShipPlacementPanel extends JPanel {
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         add(buttonPanel, BorderLayout.SOUTH);
 
+        placeAllShipsButton();
         resetButton();
         startGameButton();
         toggleOrientationButton();
+    }
+    private void placeAllShipsButton(){
+        this.placeAllShipsButton = new JButton("Place All Ships");
+        placeAllShipsButton.addActionListener(e -> {
+            resetShipPlacement();
+            player.getOwnBoard().placeAllShips(player.getFaction().getShips());
+            updateBoardUI(boardPanel, player.getOwnBoard());
+            shipListModel.clear();
+            System.out.println("Place all ships button clicked");
+        });
+        this.buttonPanel.add(placeAllShipsButton);
     }
     private void resetButton(){
         this.resetButton = new JButton("Reset Ships");
@@ -97,13 +109,10 @@ public class ShipPlacementPanel extends JPanel {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         if (selectedShip != null) {
-                            // Set the orientation of the ship before placing
                             selectedShip.setHorizontal(horizontalPlacement);
 
-                            // Attempt to place the ship at the clicked cell
                             boolean placed = board.placeShip(finalRow, finalCol, selectedShip.getLength(), horizontalPlacement);
                             if (placed) {
-                                // Update UI to reflect ship placement
                                 updateBoardUI(panel, board);
                                 shipListModel.removeElement(selectedShip);
                                 selectedShip = null;
@@ -119,14 +128,13 @@ public class ShipPlacementPanel extends JPanel {
 
     private void updateBoardUI(JPanel boardPanel, Board board) {
         Component[] components = boardPanel.getComponents();
-        int columns = board.getColumns(); // Number of columns in the board
+        int columns = board.getColumns();
 
         for (int i = 0; i < components.length; i++) {
             JPanel cell = (JPanel) components[i];
-            int row = i / columns; // Calculate row
-            int col = i % columns; // Calculate column
+            int row = i / columns;
+            int col = i % columns;
 
-            // Directly use board's grid status
             if (board.getCellStatus(row, col) == Board.Status.SHIP) {
                 cell.setBackground(Color.gray);
             } else {
