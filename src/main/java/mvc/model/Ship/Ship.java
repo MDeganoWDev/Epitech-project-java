@@ -1,4 +1,4 @@
-package main.java.mvc.model;
+package main.java.mvc.model.Ship;
 
 import java.util.Arrays;
 

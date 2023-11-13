@@ -1,5 +1,7 @@
 package main.java.mvc.model;
 
+import main.java.mvc.model.Ship.Ship;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -58,38 +60,33 @@ public class Board {
         }
         return true;
     }
-    public boolean placeAllShips(List<Ship> shipsToFaction) {
+    public void placeAllShips(List<Ship> shipsToFaction) {
         for (Ship ship : shipsToFaction) {
             if (!placeShipRandomly(ship)) {
-                return false; // If unable to place a ship, return false
+                return;
             }
         }
-        return true; // All ships placed successfully
     }
 
-    // Tries to place a ship at a random location, checking if it's possible
     private boolean placeShipRandomly(Ship ship) {
         Random random = new Random();
         boolean placed = false;
-        int maxAttempts = 100; // Prevent infinite loop by limiting attempts
+        int maxAttempts = 100;
 
         while (!placed && maxAttempts > 0) {
-            // Generate a random starting position and orientation
             int bowRow = random.nextInt(this.rows);
             int bowColumn = random.nextInt(this.columns);
             boolean horizontal = random.nextBoolean();
 
-            // Attempt to place the ship at the generated location
             placed = placeShip(bowRow, bowColumn, ship.getLength(), horizontal);
 
             if (placed) {
                 ship.setBowRow(bowRow);
                 ship.setBowColumn(bowColumn);
                 ship.setHorizontal(horizontal);
-                ship.setHit(new boolean[ship.getLength()]); // Initialize the hit array
-                this.ships.add(ship); // Add the ship to the list if successfully placed
+                ship.setHit(new boolean[ship.getLength()]);
+                this.ships.add(ship);
             }
-
             maxAttempts--;
         }
 

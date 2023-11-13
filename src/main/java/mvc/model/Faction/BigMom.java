@@ -1,6 +1,11 @@
-package main.java.mvc.model;
+package main.java.mvc.model.Faction;
 
-public class BigMom extends Faction{
+import main.java.mvc.model.Ship.Ship1;
+import main.java.mvc.model.Ship.Ship2;
+import main.java.mvc.model.Ship.Ship3;
+import main.java.mvc.model.Ship.Ship4;
+
+public class BigMom extends Faction {
     public BigMom(){
         super("Big Mom");
         super.addShip(new Ship1("Big mom child 43"));
