@@ -1,5 +1,7 @@
 package main.java.mvc.controller;
 
+import main.java.mvc.model.AI.Ai;
+import main.java.mvc.model.AI.AiFacile;
 import main.java.mvc.model.Board;
 import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.model.Player;
@@ -10,7 +12,6 @@ import main.java.mvc.view.ShipPlacementPanel;
 
 
 import javax.swing.*;
-import java.awt.*;
 
 public class GameController {
     public enum GameState {
@@ -26,6 +27,8 @@ public class GameController {
     private static GameState gameState;
     private static Player player1;
     private static Player player2;
+
+    private static Ai ai;
 
     public GameController() {
         gameState = GameState.NOT_STARTED;
@@ -63,7 +66,9 @@ public class GameController {
         System.out.println("Game status : " + gameState);
         System.out.println("Player " + player1.getName() + " is placing ships");
 
+
         player2.getOwnBoard().placeAllShips(player2.getFaction().getShips());
+        ai = new AiFacile(player2);
         switchPanel(new ShipPlacementPanel(player1));
     }
     public static void gameView(){
