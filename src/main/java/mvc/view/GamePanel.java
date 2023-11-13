@@ -1,6 +1,7 @@
 package main.java.mvc.view;
 
 import main.java.mvc.controller.GameController;
+
 import main.java.mvc.model.Player;
 import main.java.mvc.model.Board;
 

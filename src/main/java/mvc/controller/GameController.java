@@ -1,6 +1,7 @@
 package main.java.mvc.controller;
 
 import main.java.mvc.model.Board;
+
 import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.model.Player;
 import main.java.mvc.view.GamePanel;
@@ -74,6 +75,7 @@ public class GameController {
         System.out.println("Game started");
 
         switchPanel(gamePanel);
+
     }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize){
         player1 = new Player("Player 1", faction1, gridSize);
@@ -84,6 +86,7 @@ public class GameController {
         System.out.println("Grid size : " + gridSize);
 
         shipPlacementView();
+
     }
     public static String attackPhase(Board defensiveBoard2, int finalI, int finalJ){
         System.out.println("Coordinates: " + finalI + ", " + finalJ);
@@ -94,5 +97,6 @@ public class GameController {
             System.out.println("Miss!");
             return "MISS";
         }
+
     }
 }

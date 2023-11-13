@@ -13,8 +13,9 @@ public class Ship {
     public Ship(String name, int length) {
         this.name = name;
         this.length = length;
-        this.hit = new boolean[length]; // Initialise le tableau hit
-        this.horizontal = false; // Initialise horizontal avec une valeur par défaut
+        this.hit = new boolean[length];
+        this.horizontal = false;
+
     }
     public boolean shootAt(int row, int column) {
         if(horizontal) {
