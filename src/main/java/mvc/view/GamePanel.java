@@ -1,5 +1,6 @@
 package main.java.mvc.view;
 
+import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Player;
 import main.java.mvc.model.Board;
 
@@ -39,15 +40,17 @@ public class GamePanel extends JPanel {
                 int finalI = i;
                 int finalJ = j;
                 offensiveButtons.addActionListener(e -> {
-                    System.out.println("Coordinates: " + finalI + ", " + finalJ);
-                    if (defensiveBoard2.takeShot(finalI, finalJ)) {
-                        System.out.println("Hit!");
-                        offensiveButtons.setBackground(Color.RED);
-                        offensiveButtons.setEnabled(false);
-                    } else {
-                        System.out.println("Miss!");
-                        offensiveButtons.setBackground(Color.blue);
-                        offensiveButtons.setEnabled(false);
+                    switch (GameController.attackPhase( defensiveBoard2, finalI, finalJ)) {
+                      case "HIT":
+                          offensiveButtons.setBackground(Color.RED);
+                          offensiveButtons.setEnabled(false);
+                          break;
+                      case "MISS":
+                          offensiveButtons.setBackground(Color.BLUE);
+                          offensiveButtons.setEnabled(false);
+                          break;
+                      default:
+                          break;
                     }
                 });
                 offensivePanel.add(offensiveButtons);
