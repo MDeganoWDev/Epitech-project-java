@@ -1,5 +1,6 @@
-package main.java.mvc.model;
+package main.java.mvc.model.Faction;
 
+import main.java.mvc.model.Ship.Ship;
 import java.util.ArrayList;
 import java.util.List;
 

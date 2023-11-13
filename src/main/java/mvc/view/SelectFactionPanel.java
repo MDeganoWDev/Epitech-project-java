@@ -1,9 +1,10 @@
 package main.java.mvc.view;
 
+import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.view.component.SelectFactionComponent;
 import main.java.mvc.view.component.SelectGridSizeComponent;
-import main.java.mvc.controller.GameController;
+
 import javax.swing.*;
 
 public class SelectFactionPanel extends JPanel {
