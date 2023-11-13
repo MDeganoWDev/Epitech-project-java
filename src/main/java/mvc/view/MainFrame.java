@@ -2,11 +2,19 @@ package main.java.mvc.view;
 
 import main.java.mvc.controller.GameController;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.RoundRectangle2D;
+import java.io.File;
+import java.io.IOException;
 
 public class MainFrame extends JFrame {
 
@@ -14,6 +22,7 @@ public class MainFrame extends JFrame {
 
     public MainFrame() {
         initializeUI();
+        playBackgroundMusic("src/main/resources/epicSound.mp3");
         setVisible(true);
     }
 
@@ -126,6 +135,32 @@ public class MainFrame extends JFrame {
             g.setColor(color);
             ((Graphics2D) g).setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g.drawRoundRect(x, y, width - 1, height - 1, radius, radius);
+        }
+    }
+
+    private void playBackgroundMusic(String filePath) {
+        try {
+            File audioFile = new File(filePath);
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioStream);
+
+            // Démarre la lecture en boucle
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+
+            // Optionnel : réglez le volume (de 0.0 à 1.0)
+            FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            gainControl.setValue(-10.0f); // Réglez le volume ici
+
+            // Optionnel : jouez la piste sonore
+            clip.start();
+
+            // Attendez que la piste sonore soit lue (c'est une option)
+            Thread.sleep(clip.getMicrosecondLength() / 1000);
+
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException | InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

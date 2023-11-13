@@ -14,7 +14,7 @@ public class SelectGridSizeComponent extends JPanel {
         setLayout(new BorderLayout());
 
         // Initialize the JLabel with the title
-        titleLabel = new JLabel("Select the grid size");
+        titleLabel = new JLabel();
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // Initialize the JTextField with the initial number 10
