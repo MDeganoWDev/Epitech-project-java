@@ -1,0 +1,12 @@
+%TESTC  3 v2
+%TSTTREE1,test.java.mvc.model.TestPlayer,true,3,false,-1,test.java.mvc.model.TestPlayer,,
+%TSTTREE2,testSetFaction(test.java.mvc.model.TestPlayer),false,1,false,-1,testSetFaction(test.java.mvc.model.TestPlayer),,
+%TSTTREE3,testPlayerCreation(test.java.mvc.model.TestPlayer),false,1,false,-1,testPlayerCreation(test.java.mvc.model.TestPlayer),,
+%TSTTREE4,testSetName(test.java.mvc.model.TestPlayer),false,1,false,-1,testSetName(test.java.mvc.model.TestPlayer),,
+%TESTS  2,testSetFaction(test.java.mvc.model.TestPlayer)
+%TESTE  2,testSetFaction(test.java.mvc.model.TestPlayer)
+%TESTS  3,testPlayerCreation(test.java.mvc.model.TestPlayer)
+%TESTE  3,testPlayerCreation(test.java.mvc.model.TestPlayer)
+%TESTS  4,testSetName(test.java.mvc.model.TestPlayer)
+%TESTE  4,testSetName(test.java.mvc.model.TestPlayer)
+%RUNTIME47
