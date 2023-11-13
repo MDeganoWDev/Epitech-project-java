@@ -1,12 +1,15 @@
 package main.java.mvc.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Faction {
     private String name;
     private List<Ship> ships;
     public Faction(String name) {
+        this.ships = new ArrayList<>();
         this.name = name;
+        this.ships = new ArrayList<>();
     }
     public void addShip(Ship ship) {
         this.ships.add(ship);

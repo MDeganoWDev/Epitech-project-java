@@ -1,0 +1,19 @@
+%TESTC  4 v2
+%TSTTREE1,test.java.mvc.model.TestFaction,true,4,false,-1,test.java.mvc.model.TestFaction,,
+%TSTTREE2,testAddShip(test.java.mvc.model.TestFaction),false,1,false,-1,testAddShip(test.java.mvc.model.TestFaction),,
+%TSTTREE3,testGetName(test.java.mvc.model.TestFaction),false,1,false,-1,testGetName(test.java.mvc.model.TestFaction),,
+%TSTTREE4,testBonjour(test.java.mvc.model.TestFaction),false,1,false,-1,testBonjour(test.java.mvc.model.TestFaction),,
+%TSTTREE5,testSetName(test.java.mvc.model.TestFaction),false,1,false,-1,testSetName(test.java.mvc.model.TestFaction),,
+%TESTS  2,testAddShip(test.java.mvc.model.TestFaction)
+
+%TESTE  2,testAddShip(test.java.mvc.model.TestFaction)
+
+%TESTS  3,testGetName(test.java.mvc.model.TestFaction)
+%TESTE  3,testGetName(test.java.mvc.model.TestFaction)
+%TESTS  4,testBonjour(test.java.mvc.model.TestFaction)
+
+%TESTE  4,testBonjour(test.java.mvc.model.TestFaction)
+%TESTS  5,testSetName(test.java.mvc.model.TestFaction)
+%TESTE  5,testSetName(test.java.mvc.model.TestFaction)
+
+%RUNTIME29

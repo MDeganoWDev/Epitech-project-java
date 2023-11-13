@@ -1,0 +1,8 @@
+%TESTC  3 v2
+%TSTTREE1,test.java.mvc.model.TestShip2,true,3,false,-1,test.java.mvc.model.TestShip2,,
+%TSTTREE2,testIsSunk(test.java.mvc.model.TestShip2),false,1,false,-1,testIsSunk(test.java.mvc.model.TestShip2),,
+%TSTTREE3,testShootAt(test.java.mvc.model.TestShip2),false,1,false,-1,testShootAt(test.java.mvc.model.TestShip2),,
+%TSTTREE4,testConstructor(test.java.mvc.model.TestShip2),false,1,false,-1,testConstructor(test.java.mvc.model.TestShip2),,
+%TESTS  2,testIsSunk(test.java.mvc.model.TestShip2)
+
+%TESTE  2,testIsSunk(test.java.mvc.model.TestShip2)

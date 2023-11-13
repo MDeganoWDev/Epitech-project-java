@@ -1,4 +1,4 @@
-package test.java.mvc.model;
+/*package test.java.mvc.model;
 
 import test.java.mvc.model.*;
 
@@ -52,5 +52,5 @@ class ShipTest {
         submarine.shootAt(6, 7); // Hit at stern
         assertTrue(submarine.isSunk());
     }
-}
+}*/
 
