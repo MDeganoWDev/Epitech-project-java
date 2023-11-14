@@ -31,7 +31,7 @@ public class VictoryPanel extends JPanel {
         JButton buttonNewGame = new JButton("New Game");
         buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
         buttonNewGame.addActionListener(e -> {
-            GameController.switchPanel(new SelectFactionPanel());
+            GameController.selectFactionView();
         });
         add(buttonNewGame);
     }

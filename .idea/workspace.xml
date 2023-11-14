@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainMenuPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/VictoryPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "addingAiEasy",
+    "git-widget-placeholder": "addingLoopGame",
     "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,7 +113,7 @@
       <updated>1699901384370</updated>
       <workItem from="1699901385667" duration="2113000" />
       <workItem from="1699911739574" duration="628000" />
-      <workItem from="1699945797349" duration="11953000" />
+      <workItem from="1699945797349" duration="14126000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
