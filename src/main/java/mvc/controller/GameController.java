@@ -4,10 +4,7 @@ import main.java.mvc.model.AI.AiStrategy;
 import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.model.Board;
 import main.java.mvc.model.Player;
-import main.java.mvc.view.GamePanel;
-import main.java.mvc.view.MainFrame;
-import main.java.mvc.view.SelectFactionPanel;
-import main.java.mvc.view.ShipPlacementPanel;
+import main.java.mvc.view.*;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -37,11 +34,6 @@ public class GameController {
     public static void addObserver(GameObserver observer) {
         observers.add(observer);
     }
-
-    public static void removeObserver(GameObserver observer) {
-        observers.remove(observer);
-    }
-
     private static void notifyObservers() {
         for (GameObserver observer : observers) {
             observer.update();
@@ -63,6 +55,21 @@ public class GameController {
 
         System.out.println("Game initialized");
         System.out.println("Game status : " + gameState);
+
+        switchPanel(new MainMenuPanel());
+    }
+    public static void selectMainMenuView() {
+        if (gameState != GameState.NOT_STARTED) {
+            JOptionPane.showMessageDialog(mainFrame, "Finish the current game before starting a new one.",
+                    "Game In Progress", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        gameState = GameState.NOT_STARTED;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Switching to main menu view");
+
+        switchPanel(new MainMenuPanel());
     }
     public static void selectFactionView(){
         if (gameState != GameState.NOT_STARTED) {
@@ -104,6 +111,19 @@ public class GameController {
         System.out.println("Game started");
 
         switchPanel(gamePanel);
+    }
+    public static void victoryView(String winner){
+        if (gameState != GameState.GAME_OVER) {
+            JOptionPane.showMessageDialog(mainFrame, "Finish the game before viewing the victory screen.",
+                    "Game Not Over", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        gameState = GameState.NOT_STARTED;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Switching to victory view");
+
+        switchPanel(new VictoryPanel(winner));
     }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         player1 = new Player("Player 1", faction1, gridSize);
@@ -180,10 +200,10 @@ public class GameController {
     public static void checkGameState() {
         if (player1.getOwnBoard().areAllShipsSunk()) {
             gameState = GameState.GAME_OVER;
-            // Handle victory for AI
+            switchPanel(new VictoryPanel(player2.getName()));
         } else if (player2.getOwnBoard().areAllShipsSunk()) {
             gameState = GameState.GAME_OVER;
-            // Handle victory for player
+            switchPanel(new VictoryPanel(player1.getName()));
         } else {
             gameState = GameState.GAME_IN_PROGRESS;
         }
