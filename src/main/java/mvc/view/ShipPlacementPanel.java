@@ -21,7 +21,7 @@ public class ShipPlacementPanel extends JPanel {
     private JButton resetButton;
     private JButton startGameButton;
     private JButton toggleOrientationButton;
-    private boolean horizontalPlacement = true; // Default placement orientation
+    private boolean horizontalPlacement = true;
 
     public ShipPlacementPanel(Player player) {
         this.player = player;
@@ -32,7 +32,6 @@ public class ShipPlacementPanel extends JPanel {
     private void initializeComponents() {
         setLayout(new BorderLayout());
 
-        // Initialize ship list
         shipListModel = new DefaultListModel<>();
         player.getFaction().getShips().forEach(shipListModel::addElement);
         shipList = new JList<>(shipListModel);
@@ -40,7 +39,6 @@ public class ShipPlacementPanel extends JPanel {
         shipList.addListSelectionListener(e -> selectedShip = shipList.getSelectedValue());
         add(new JScrollPane(shipList), BorderLayout.WEST);
 
-        // Initialize board panel
         boardPanel = createBoardPanel(player.getOwnBoard());
         add(boardPanel, BorderLayout.CENTER);
 
@@ -78,6 +76,7 @@ public class ShipPlacementPanel extends JPanel {
         this.startGameButton = new JButton("Start Game");
         startGameButton.addActionListener(e -> {
             if (shipListModel.isEmpty()) {
+                GameController.aiShipPlacement();
                 GameController.gameView();
                 System.out.println("Start game button clicked");
             } else {

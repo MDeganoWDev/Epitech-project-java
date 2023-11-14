@@ -1,15 +1,11 @@
 package main.java.mvc.model.AI;
 
 import main.java.mvc.model.Board;
-import main.java.mvc.model.Player;
 
 import java.awt.*;
 import java.util.Random;
 
-public class AiFacile extends Ai{
-    public AiFacile(Player player) {
-        super(player);
-    }
+public class HardAi implements AiStrategy{
     private Random random = new Random();
 
     public Point makeMove(Board board) {
