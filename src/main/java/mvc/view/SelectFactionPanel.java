@@ -13,8 +13,6 @@ public class SelectFactionPanel extends JPanel {
     private JPanel faction2Selection;
     private JPanel gridSelection;
     private JPanel difficultySelection;
-
-
     public SelectFactionPanel() {
         createExistingComponent();
         createValidateButton();

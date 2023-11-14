@@ -125,6 +125,19 @@ public class GameController {
 
         switchPanel(new VictoryPanel(winner));
     }
+    public static void surrender() {
+        if (gameState != GameState.GAME_IN_PROGRESS) {
+            JOptionPane.showMessageDialog(mainFrame, "Start the game before surrendering.",
+                    "Game Not Started", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        gameState = GameState.GAME_OVER;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Player " + player1.getName() + " surrendered");
+
+        victoryView(player2.getName());
+    }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         player1 = new Player("Player 1", faction1, gridSize);
         player2 = new Player("player 2", faction2, gridSize);
