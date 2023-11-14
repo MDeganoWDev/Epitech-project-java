@@ -13,19 +13,16 @@ public class Ship {
         this.length = length;
         this.hit = new boolean[length];
         this.horizontal = false;
-
     }
     public boolean shootAt(int row, int column) {
         if(horizontal) {
             if(row == this.bowRow && column >= this.bowColumn && column < this.bowColumn + length) {
                 hit[column - this.bowColumn] = true;
-                System.out.println(this.name + " is hit");
                 return true;
             }
         } else {
             if(column == this.bowColumn && row >= this.bowRow && row < this.bowRow + length) {
                 hit[row - this.bowRow] = true;
-                System.out.println(this.name + " is hit");
                 return true;
             }
         }
@@ -35,7 +32,6 @@ public class Ship {
         for (boolean touch : hit) {
             if (!touch) return false;
         }
-        System.out.println(this.name + " is sunk");
         return true;
     }
     public String getName() {
