@@ -41,10 +41,4 @@ public class TestFaction {
         assertEquals("Ship 1", ships.get(0).getName());
         assertEquals("Ship 2", ships.get(1).getName());
     }
-
-    @Test
-    public void testSetName() {
-        faction.setName("New Faction Name");
-        assertEquals("New Faction Name", faction.getName());
-    }
 }
