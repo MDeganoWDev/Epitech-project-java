@@ -189,9 +189,12 @@ public class GameController {
 
     }
     public static String attackPhase(Board ennemyBoard, int finalI, int finalJ){
-        System.out.println("Coordinates: " + finalI + ", " + finalJ);
+        if (ennemyBoard == player1.getOwnBoard()) {
+            System.out.println("Player 2 is attacking: " + finalI + ", " + finalJ);
+        } else {
+            System.out.println("Player 1 is attacking: " + finalI + ", " + finalJ);
+        }
         if (ennemyBoard.takeShot(finalI, finalJ)) {
-            System.out.println("Hit!");
             return "HIT";
         } else {
             System.out.println("Miss!");
@@ -201,10 +204,6 @@ public class GameController {
     public static void aiTurn(Board playerBoard, Board aiTrackingBoard) {
         Point aiMove = aiStrategy.makeMove(aiTrackingBoard);
         String result = attackPhase(playerBoard, aiMove.x, aiMove.y);
-
-        System.out.println("AI attack : " + aiMove.x + ", " + aiMove.y);
-        System.out.println(result);
-
         playerBoard.updateCellStatus(aiMove.x, aiMove.y, Board.Status.valueOf(result));
         notifyObservers();
     }
