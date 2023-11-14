@@ -6,7 +6,7 @@ import java.awt.*;
 import java.util.Random;
 
 public class MediumAi implements AiStrategy{
-    private Random random = new Random();
+    private final Random random = new Random();
 
     public Point makeMove(Board board) {
         int x, y;

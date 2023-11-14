@@ -11,15 +11,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class ShipPlacementPanel extends JPanel {
-    private Player player;
+    private final Player player;
     private Ship selectedShip;
     private JPanel boardPanel;
     private JList<Ship> shipList;
     private DefaultListModel<Ship> shipListModel;
     private JPanel buttonPanel;
-    private JButton placeAllShipsButton;
-    private JButton resetButton;
-    private JButton startGameButton;
     private JButton toggleOrientationButton;
     private boolean horizontalPlacement = true;
 
@@ -44,7 +41,6 @@ public class ShipPlacementPanel extends JPanel {
 
     }
     private void initializeButton(){
-        // Panel to hold buttons
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         add(buttonPanel, BorderLayout.SOUTH);
 
@@ -54,7 +50,7 @@ public class ShipPlacementPanel extends JPanel {
         toggleOrientationButton();
     }
     private void placeAllShipsButton(){
-        this.placeAllShipsButton = new JButton("Place All Ships");
+        JButton placeAllShipsButton = new JButton("Place All Ships");
         placeAllShipsButton.addActionListener(e -> {
             resetShipPlacement();
             player.getOwnBoard().placeAllShips(player.getFaction().getShips());
@@ -65,7 +61,7 @@ public class ShipPlacementPanel extends JPanel {
         this.buttonPanel.add(placeAllShipsButton);
     }
     private void resetButton(){
-        this.resetButton = new JButton("Reset Ships");
+        JButton resetButton = new JButton("Reset Ships");
         resetButton.addActionListener(e -> {
             resetShipPlacement();
             System.out.println("Reset button clicked");
@@ -73,7 +69,7 @@ public class ShipPlacementPanel extends JPanel {
         this.buttonPanel.add(resetButton);
     }
     private void startGameButton(){
-        this.startGameButton = new JButton("Start Game");
+        JButton startGameButton = new JButton("Start Game");
         startGameButton.addActionListener(e -> {
             if (shipListModel.isEmpty()) {
                 GameController.aiShipPlacement();

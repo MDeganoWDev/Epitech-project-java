@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Faction {
-    private String name;
-    private List<Ship> ships;
+    private final String name;
+    private final List<Ship> ships;
     public Faction(String name) {
 
         this.name = name;
@@ -22,11 +22,5 @@ public class Faction {
     }
     public List<Ship> getShips() {
         return this.ships;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setShips(List<Ship> ships) {
-        this.ships = ships;
     }
 }

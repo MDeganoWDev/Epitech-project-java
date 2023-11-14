@@ -19,10 +19,9 @@ public class GameController {
         GAME_IN_PROGRESS,
         GAME_OVER
     }
-    private static List<GameObserver> observers = new ArrayList<>();
+    private static final List<GameObserver> observers = new ArrayList<>();
     private static AiStrategy aiStrategy;
     private static MainFrame mainFrame;
-    private static JPanel gamePanel;
     private static GameState gameState;
     private static Player player1;
     private static Player player2;
@@ -56,7 +55,7 @@ public class GameController {
         System.out.println("Game initialized");
         System.out.println("Game status : " + gameState);
 
-        switchPanel(new MainMenuPanel());
+        selectMainMenuView();
     }
     public static void selectMainMenuView() {
         if (gameState != GameState.NOT_STARTED) {
@@ -64,7 +63,6 @@ public class GameController {
                     "Game In Progress", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        gameState = GameState.NOT_STARTED;
 
         System.out.println("Game status : " + gameState);
         System.out.println("Switching to main menu view");
@@ -104,8 +102,8 @@ public class GameController {
             return;
         }
         gameState = GameState.GAME_IN_PROGRESS;
-        gamePanel = new GamePanel(player1);
-        addObserver((GamePanel) gamePanel);
+        GamePanel gamePanel = new GamePanel(player1);
+        addObserver(gamePanel);
 
         System.out.println("Game status : " + gameState);
         System.out.println("Game started");
@@ -220,5 +218,19 @@ public class GameController {
         } else {
             gameState = GameState.GAME_IN_PROGRESS;
         }
+    }
+    public static void newGame() {
+        player1 = null;
+        player2 = null;
+        aiStrategy = null;
+        gameState = GameState.NOT_STARTED;
+        selectFactionView();
+    }
+    public static void goToMainMenu(){
+        player1 = null;
+        player2 = null;
+        aiStrategy = null;
+        gameState = GameState.NOT_STARTED;
+        selectMainMenuView();
     }
 }

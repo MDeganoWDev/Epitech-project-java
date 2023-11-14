@@ -1,12 +1,10 @@
 package main.java.mvc.model.Ship;
 
-import java.util.Arrays;
-
 public class Ship {
-    private String name;
+    private final String name;
     private int bowRow;
     private int bowColumn;
-    private int length;
+    private final int length;
     private boolean horizontal;
     private boolean[] hit;
 
@@ -21,11 +19,13 @@ public class Ship {
         if(horizontal) {
             if(row == this.bowRow && column >= this.bowColumn && column < this.bowColumn + length) {
                 hit[column - this.bowColumn] = true;
+                System.out.println(this.name + " is hit");
                 return true;
             }
         } else {
             if(column == this.bowColumn && row >= this.bowRow && row < this.bowRow + length) {
                 hit[row - this.bowRow] = true;
+                System.out.println(this.name + " is hit");
                 return true;
             }
         }
@@ -35,6 +35,7 @@ public class Ship {
         for (boolean touch : hit) {
             if (!touch) return false;
         }
+        System.out.println(this.name + " is sunk");
         return true;
     }
     public String getName() {
@@ -64,8 +65,10 @@ public class Ship {
     public void setHorizontal(boolean horizontal) {
         this.horizontal = horizontal;
     }
-    public boolean[] setHit(boolean[] hit) {
+    public void setHit(boolean[] hit) {
         this.hit = hit;
-        return this.hit;
+    }
+    public String toString() {
+        return "Size: " + getLength() + " | " + getName();
     }
 }

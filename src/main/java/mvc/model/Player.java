@@ -3,10 +3,10 @@ package main.java.mvc.model;
 import main.java.mvc.model.Faction.Faction;
 
 public class Player {
-    private String name;
-    private Faction faction;
-    private Board ownBoard;
-    private Board trackingBoard;
+    private final String name;
+    private final Faction faction;
+    private final Board ownBoard;
+    private final Board trackingBoard;
     private boolean isTurn;
     private boolean isAI = false;
     public Player(String name, Faction faction, int boardSize) {
@@ -27,12 +27,6 @@ public class Player {
 
     public Board getTrackingBoard() {
         return this.trackingBoard;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setFaction(Faction faction) {
-        this.faction = faction;
     }
     public boolean isTurn() {
         return this.isTurn;
