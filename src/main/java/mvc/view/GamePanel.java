@@ -1,23 +1,25 @@
 package main.java.mvc.view;
 
 import main.java.mvc.controller.GameController;
+import main.java.mvc.controller.GameObserver;
 import main.java.mvc.model.Player;
 import main.java.mvc.model.Board;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class GamePanel extends JPanel {
+public class GamePanel extends JPanel implements GameObserver {
     private Board offensiveBoard1;
     private Board defensiveBoard1;
-    private Board defensiveBoard2;
     private JPanel offensivePanel;
     private JPanel defensivePanel;
-    public GamePanel(Player player1, Player player2) {
+    public GamePanel(Player player1) {
         this.offensiveBoard1 = player1.getTrackingBoard();
         this.defensiveBoard1 = player1.getOwnBoard();
-        this.defensiveBoard2 = player2.getOwnBoard();
         createGamePanel();
+    }
+    public void update() {
+        updateDefensivePanel();
     }
     private void createGamePanel() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -40,16 +42,20 @@ public class GamePanel extends JPanel {
                 int finalI = i;
                 int finalJ = j;
                 offensiveButtons.addActionListener(e -> {
-                    switch (GameController.attackPhase( defensiveBoard2, finalI, finalJ)) {
+                    switch (GameController.combatLoop(finalI, finalJ)) {
                       case "HIT":
                           offensiveButtons.setBackground(Color.RED);
                           offensiveButtons.setEnabled(false);
+                          GameController.checkGameState();
+
                           break;
                       case "MISS":
                           offensiveButtons.setBackground(Color.BLUE);
                           offensiveButtons.setEnabled(false);
+                          GameController.checkGameState();
                           break;
                       default:
+                          GameController.checkGameState();
                           break;
                     }
                 });
@@ -77,6 +83,27 @@ public class GamePanel extends JPanel {
                         break;
                 }
                 defensivePanel.add(defensiveButtons);
+            }
+        }
+    }
+    private void updateDefensivePanel() {
+        for (int i = 0; i < defensiveBoard1.getRows(); i++) {
+            for (int j = 0; j < defensiveBoard1.getColumns(); j++) {
+                JButton button = (JButton) defensivePanel.getComponent(i * defensiveBoard1.getColumns() + j);
+                switch (defensiveBoard1.getCellStatus(i, j)) {
+                    case SHIP:
+                        button.setBackground(Color.GRAY);
+                        break;
+                    case HIT:
+                        button.setBackground(Color.RED);
+                        break;
+                    case MISS:
+                        button.setBackground(Color.BLUE);
+                        break;
+                    default:
+                        button.setBackground(Color.WHITE);
+                        break;
+                }
             }
         }
     }

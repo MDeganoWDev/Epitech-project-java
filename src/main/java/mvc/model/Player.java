@@ -7,6 +7,8 @@ public class Player {
     private Faction faction;
     private Board ownBoard;
     private Board trackingBoard;
+    private boolean isTurn;
+    private boolean isAI = false;
     public Player(String name, Faction faction, int boardSize) {
         this.name = name;
         this.faction = faction;
@@ -31,5 +33,17 @@ public class Player {
     }
     public void setFaction(Faction faction) {
         this.faction = faction;
+    }
+    public boolean isTurn() {
+        return this.isTurn;
+    }
+    public void setTurn(boolean turn) {
+        this.isTurn = turn;
+    }
+    public boolean isAI() {
+        return this.isAI;
+    }
+    public void setAI(boolean AI) {
+        this.isAI = AI;
     }
 }
