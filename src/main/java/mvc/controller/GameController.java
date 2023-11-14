@@ -1,17 +1,18 @@
 package main.java.mvc.controller;
 
 import main.java.mvc.model.AI.AiStrategy;
-import main.java.mvc.model.Board;
 import main.java.mvc.model.Faction.Faction;
+import main.java.mvc.model.Board;
 import main.java.mvc.model.Player;
 import main.java.mvc.view.GamePanel;
 import main.java.mvc.view.MainFrame;
 import main.java.mvc.view.SelectFactionPanel;
 import main.java.mvc.view.ShipPlacementPanel;
 
-
-import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.*;
 
 public class GameController {
     public enum GameState {
@@ -21,6 +22,7 @@ public class GameController {
         GAME_IN_PROGRESS,
         GAME_OVER
     }
+    private static List<GameObserver> observers = new ArrayList<>();
     private static AiStrategy aiStrategy;
     private static MainFrame mainFrame;
     private static JPanel gamePanel;
@@ -31,6 +33,19 @@ public class GameController {
     public GameController() {
         gameState = GameState.NOT_STARTED;
         initializeGame();
+    }
+    public static void addObserver(GameObserver observer) {
+        observers.add(observer);
+    }
+
+    public static void removeObserver(GameObserver observer) {
+        observers.remove(observer);
+    }
+
+    private static void notifyObservers() {
+        for (GameObserver observer : observers) {
+            observer.update();
+        }
     }
     public static void switchPanel(JPanel panel) {
         mainFrame.getContentPane().removeAll();
@@ -82,7 +97,8 @@ public class GameController {
             return;
         }
         gameState = GameState.GAME_IN_PROGRESS;
-        gamePanel = new GamePanel(player1, player2);
+        gamePanel = new GamePanel(player1);
+        addObserver((GamePanel) gamePanel);
 
         System.out.println("Game status : " + gameState);
         System.out.println("Game started");
@@ -92,6 +108,10 @@ public class GameController {
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         player1 = new Player("Player 1", faction1, gridSize);
         player2 = new Player("player 2", faction2, gridSize);
+
+        player2.setAI(true);
+        player1.setTurn(true);
+        player2.setTurn(false);
 
         System.out.println("Player 1 : name is " + player1.getName() + ", faction is " + player1.getFaction().getName());
         System.out.println("Player 2 : name is " + player2.getName() + ", faction is " + player2.getFaction().getName());
@@ -104,6 +124,39 @@ public class GameController {
     public static void aiShipPlacement() {
         player2.getOwnBoard().placeAllShips(player2.getFaction().getShips());
     }
+    public static String combatLoop(int row, int col) {
+        if (gameState != GameState.GAME_IN_PROGRESS) {
+            JOptionPane.showMessageDialog(mainFrame, "Start the game before attacking.",
+                    "Game Not Started", JOptionPane.WARNING_MESSAGE);
+            return "ERROR";
+        }
+        Player currentPlayer = player1.isTurn() ? player1 : player2;
+        Player opponentPlayer = player1.isTurn() ? player2 : player1;
+
+        if (player2.isAI()) {
+            String result = attackPhase(opponentPlayer.getOwnBoard(), row, col);
+            currentPlayer.setTurn(false);
+            opponentPlayer.setTurn(true);
+
+            checkGameState();
+
+            aiTurn(currentPlayer.getOwnBoard(), opponentPlayer.getTrackingBoard());
+            currentPlayer.setTurn(true);
+            opponentPlayer.setTurn(false);
+
+            checkGameState();
+            notifyObservers();
+            return result;
+        } else {
+            String result = attackPhase(opponentPlayer.getOwnBoard(), row, col);
+            currentPlayer.setTurn(false);
+            opponentPlayer.setTurn(true);
+
+            checkGameState();
+            return result;
+        }
+
+    }
     public static String attackPhase(Board ennemyBoard, int finalI, int finalJ){
         System.out.println("Coordinates: " + finalI + ", " + finalJ);
         if (ennemyBoard.takeShot(finalI, finalJ)) {
@@ -114,12 +167,17 @@ public class GameController {
             return "MISS";
         }
     }
-    public static void aiTurn(Board playerBoard, Board aiBoard) {
-        Point aiMove = aiStrategy.makeMove(aiBoard);
+    public static void aiTurn(Board playerBoard, Board aiTrackingBoard) {
+        Point aiMove = aiStrategy.makeMove(aiTrackingBoard);
         String result = attackPhase(playerBoard, aiMove.x, aiMove.y);
-        checkGameState();
+
+        System.out.println("AI attack : " + aiMove.x + ", " + aiMove.y);
+        System.out.println(result);
+
+        playerBoard.updateCellStatus(aiMove.x, aiMove.y, Board.Status.valueOf(result));
+        notifyObservers();
     }
-    private static void checkGameState() {
+    public static void checkGameState() {
         if (player1.getOwnBoard().areAllShipsSunk()) {
             gameState = GameState.GAME_OVER;
             // Handle victory for AI

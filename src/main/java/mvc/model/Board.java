@@ -67,8 +67,6 @@ public class Board {
             }
         }
     }
-
-
     private boolean placeShipRandomly(Ship ship) {
 
         Random random = new Random();
@@ -104,7 +102,6 @@ public class Board {
                     ship.getHit()[ship.isHorizontal() ? col - ship.getBowColumn() : row - ship.getBowRow()] = true;
     
                     if (ship.isSunk()) {
-                        // Si le navire est coulé, mettez à jour les cellules du plateau en conséquence
                         for (int i = 0; i < ship.getLength(); i++) {
                             int currentRow = ship.isHorizontal() ? ship.getBowRow() : ship.getBowRow() + i;
                             int currentCol = ship.isHorizontal() ? ship.getBowColumn() + i : ship.getBowColumn();
@@ -128,10 +125,10 @@ public class Board {
     public boolean areAllShipsSunk() {
         for (Ship ship : ships) {
             if (!ship.isSunk()) {
-                return false; // Si un navire n'est pas coulé, retourne false
+                return false;
             }
         }
-        return true; // Tous les navires sont coulés
+        return true;
     }
     public void updateCellStatus(int row, int col, Status status) {
         grid[row][col] = status;
