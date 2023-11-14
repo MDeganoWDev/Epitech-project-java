@@ -23,7 +23,6 @@ public class Board {
         this.rows = size;
         this.columns = size;
         this.grid = new Status[rows][columns];
-
         for (int row = 0; row < this.rows; row++) {
             for (int col = 0; col < this.columns; col++) {
                 grid[row][col] = Status.EMPTY;
@@ -42,7 +41,6 @@ public class Board {
         } else {
             if(bowRow + length > this.rows) return false;
         }
-
         for (int i = 0; i < length; i++) {
             int currentRow = horizontal ? bowRow : bowRow + i;
             int currentColumn = horizontal ? bowColumn + i : bowColumn;
@@ -51,7 +49,6 @@ public class Board {
                 return false;
             }
         }
-
         for (int i = 0; i < length; i++) {
             int currentRow = horizontal ? bowRow : bowRow + i;
             int currentColumn = horizontal ? bowColumn + i : bowColumn;
@@ -78,9 +75,7 @@ public class Board {
             int bowRow = random.nextInt(this.rows);
             int bowColumn = random.nextInt(this.columns);
             boolean horizontal = random.nextBoolean();
-
             placed = placeShip(bowRow, bowColumn, ship.getLength(), horizontal);
-
             if (placed) {
                 ship.setBowRow(bowRow);
                 ship.setBowColumn(bowColumn);
@@ -90,27 +85,25 @@ public class Board {
             }
             maxAttempts--;
         }
-
         System.out.println("Ship placed randomly");
         return placed;
     }
     public boolean takeShot(int row, int col) {
         Status status = grid[row][col];
-    
         if (status == Status.SHIP) {
             for (Ship ship : ships) {
                 if (ship.shootAt(row, col)) {
                     updateCellStatus(row, col, Status.HIT);
                     ship.getHit()[ship.isHorizontal() ? col - ship.getBowColumn() : row - ship.getBowRow()] = true;
-    
+                    System.out.println(ship.getName() + "is hit");
                     if (ship.isSunk()) {
                         for (int i = 0; i < ship.getLength(); i++) {
                             int currentRow = ship.isHorizontal() ? ship.getBowRow() : ship.getBowRow() + i;
                             int currentCol = ship.isHorizontal() ? ship.getBowColumn() + i : ship.getBowColumn();
                             updateCellStatus(currentRow, currentCol, Status.HIT);
+                            System.out.println(ship.getName() + "is sunk");
                         }
                     }
-    
                     return true;
                 }
             }

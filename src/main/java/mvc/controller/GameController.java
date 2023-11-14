@@ -25,6 +25,7 @@ public class GameController {
     private static GameState gameState;
     private static Player player1;
     private static Player player2;
+    private static int boardSize;
 
     public GameController() {
         gameState = GameState.NOT_STARTED;
@@ -139,6 +140,7 @@ public class GameController {
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         player1 = new Player("Player 1", faction1, gridSize);
         player2 = new Player("player 2", faction2, gridSize);
+        boardSize = gridSize;
 
         player2.setAI(true);
         player1.setTurn(true);
@@ -231,5 +233,8 @@ public class GameController {
         aiStrategy = null;
         gameState = GameState.NOT_STARTED;
         selectMainMenuView();
+    }
+    public static int getBoardSize() {
+        return boardSize;
     }
 }
