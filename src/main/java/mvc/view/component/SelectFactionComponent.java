@@ -8,26 +8,24 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SelectFactionComponent extends JPanel{
-    private JComboBox<String> comboBox;
-    private JLabel titleLabel;
+    private final JComboBox<String> comboBox;
+
     public SelectFactionComponent(String title) {
         setLayout(new BorderLayout());
 
-        // Initialize the JLabel with the title
-        titleLabel = new JLabel(title);
+        JLabel titleLabel = new JLabel(title);
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
 
-        // Initialize the JComboBox and add items
         comboBox = new JComboBox<>();
         comboBox.addItem("Strawhat");
         comboBox.addItem("Big mom");
 
-        // Adding components to the JPanel
         add(titleLabel, BorderLayout.NORTH);
         add(comboBox, BorderLayout.CENTER);
     }
     public Faction getFaction() {
         String factionName = (String) comboBox.getSelectedItem();
+        assert factionName != null;
         return switch (factionName) {
             case "Strawhat" -> new Strawhat();
             case "Big mom" -> new BigMom();

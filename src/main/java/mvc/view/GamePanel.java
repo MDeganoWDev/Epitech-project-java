@@ -9,8 +9,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GamePanel extends JPanel implements GameObserver {
-    private Board offensiveBoard1;
-    private Board defensiveBoard1;
+    private final Board offensiveBoard1;
+    private final Board defensiveBoard1;
     private JPanel offensivePanel;
     private JPanel defensivePanel;
     public GamePanel(Player player1) {

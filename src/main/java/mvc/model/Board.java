@@ -10,10 +10,10 @@ public class Board {
     public enum Status {
         EMPTY, SHIP, HIT, MISS
     }
-    private int rows;
-    private int columns;
+    private final int rows;
+    private final int columns;
     public List<Ship> ships = new ArrayList<>();
-    private Status[][] grid;
+    private final Status[][] grid;
     public Board(int size) {
         if (size < 10) {
             size = 10;
@@ -65,6 +65,7 @@ public class Board {
             if (!placeShipRandomly(ship)) {
                 return;
             }
+            System.out.println("All Ship placed randomly");
         }
     }
     private boolean placeShipRandomly(Ship ship) {
@@ -128,6 +129,7 @@ public class Board {
                 return false;
             }
         }
+        System.out.println("All ships sunk");
         return true;
     }
     public void updateCellStatus(int row, int col, Status status) {
@@ -140,5 +142,6 @@ public class Board {
             }
         }
         ships.clear();
+        System.out.println("Board reset");
     }
 }
