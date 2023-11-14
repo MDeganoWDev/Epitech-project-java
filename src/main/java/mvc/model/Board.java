@@ -65,8 +65,8 @@ public class Board {
             if (!placeShipRandomly(ship)) {
                 return;
             }
-            System.out.println("All Ship placed randomly");
         }
+        System.out.println("All ships placed randomly");
     }
     private boolean placeShipRandomly(Ship ship) {
 
@@ -91,6 +91,7 @@ public class Board {
             maxAttempts--;
         }
 
+        System.out.println("Ship placed randomly");
         return placed;
     }
     public boolean takeShot(int row, int col) {

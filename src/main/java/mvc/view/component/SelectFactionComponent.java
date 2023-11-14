@@ -1,8 +1,6 @@
 package main.java.mvc.view.component;
 
-import main.java.mvc.model.Faction.BigMom;
-import main.java.mvc.model.Faction.Faction;
-import main.java.mvc.model.Faction.Strawhat;
+import main.java.mvc.model.Faction.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,8 +15,12 @@ public class SelectFactionComponent extends JPanel{
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
 
         comboBox = new JComboBox<>();
-        comboBox.addItem("Strawhat");
-        comboBox.addItem("Big mom");
+        comboBox.addItem("France");
+        comboBox.addItem("Angleterre");
+        comboBox.addItem("Espagne");
+        comboBox.addItem("Portugal");
+        comboBox.addItem("Barbe Noire");
+        comboBox.addItem("Barbe Rousse");
 
         add(titleLabel, BorderLayout.NORTH);
         add(comboBox, BorderLayout.CENTER);
@@ -27,9 +29,14 @@ public class SelectFactionComponent extends JPanel{
         String factionName = (String) comboBox.getSelectedItem();
         assert factionName != null;
         return switch (factionName) {
-            case "Strawhat" -> new Strawhat();
-            case "Big mom" -> new BigMom();
-            default -> null;
+            case "France" -> new France();
+            case "Angleterre" -> new Angleterre();
+            case "Espagne" -> new Espagne();
+            case "Portugal" -> new Portugal();
+            case "Barbe Noire" -> new BarbeNoire();
+            case "Barbe Rousse" -> new BarbeRousse();
+            default -> throw new IllegalStateException("Unexpected value: " + factionName);
+
         };
     }
 }
