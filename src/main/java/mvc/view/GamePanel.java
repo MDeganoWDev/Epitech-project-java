@@ -4,6 +4,7 @@ import main.java.mvc.controller.GameController;
 import main.java.mvc.controller.GameObserver;
 import main.java.mvc.model.Player;
 import main.java.mvc.model.Board;
+import main.java.mvc.view.component.MessagePanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,18 +17,33 @@ public class GamePanel extends JPanel implements GameObserver {
     public GamePanel(Player player1) {
         this.offensiveBoard1 = player1.getTrackingBoard();
         this.defensiveBoard1 = player1.getOwnBoard();
-        createSurrenderButton();
+        panelTop();
         createGamePanel();
     }
     public void update() {
         updateDefensivePanel();
     }
-    private void createSurrenderButton() {
+    private JButton createSurrenderButton() {
         JButton surrenderButton = new JButton("Surrender");
         surrenderButton.addActionListener(e -> {
             GameController.surrender();
         });
-        add(surrenderButton);
+        return surrenderButton ;
+    }
+    private void panelTop() {
+        JPanel containerPanel = new JPanel();
+        containerPanel.setLayout(new BoxLayout(containerPanel, BoxLayout.X_AXIS));
+
+        MessagePanel leftPanel = new MessagePanel("Player 1");
+        MessagePanel rightPanel = new MessagePanel("Player 2");
+
+        containerPanel.add(leftPanel);
+        containerPanel.add(Box.createHorizontalGlue());
+        containerPanel.add(createSurrenderButton());
+        containerPanel.add(Box.createHorizontalGlue());
+        containerPanel.add(rightPanel);
+
+        add(containerPanel);
     }
     private void createGamePanel() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -115,4 +131,5 @@ public class GamePanel extends JPanel implements GameObserver {
             }
         }
     }
+
 }

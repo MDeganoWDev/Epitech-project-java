@@ -1,5 +1,6 @@
 package main.java.mvc.model;
 
+import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Ship.Ship;
 
 import java.util.ArrayList;
@@ -95,14 +96,14 @@ public class Board {
                 if (ship.shootAt(row, col)) {
                     updateCellStatus(row, col, Status.HIT);
                     ship.getHit()[ship.isHorizontal() ? col - ship.getBowColumn() : row - ship.getBowRow()] = true;
-                    System.out.println(ship.getName() + "is hit");
+                    System.out.println(ship.getName() + " is hit");
                     if (ship.isSunk()) {
                         for (int i = 0; i < ship.getLength(); i++) {
                             int currentRow = ship.isHorizontal() ? ship.getBowRow() : ship.getBowRow() + i;
                             int currentCol = ship.isHorizontal() ? ship.getBowColumn() + i : ship.getBowColumn();
                             updateCellStatus(currentRow, currentCol, Status.HIT);
-                            System.out.println(ship.getName() + "is sunk");
                         }
+                        System.out.println(ship.getName() + " is sunk");
                     }
                     return true;
                 }
