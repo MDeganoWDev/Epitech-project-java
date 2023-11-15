@@ -1,19 +1,33 @@
 package main.java.mvc.model.AI;
 
 import main.java.mvc.model.Board;
+import main.java.mvc.controller.GameController;
+
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class EasyAi implements AiStrategy {
-    private Random random = new Random();
-
+    private final Random random = new Random();
+    private final List<Point> availableMoves;
+    public EasyAi() {
+        int size = GameController.getBoardSize();
+        availableMoves = new ArrayList<>();
+        for (int x = 0; x < size; x++) {
+            for (int y = 0; y < size; y++) {
+                availableMoves.add(new Point(x, y));
+            }
+        }
+    }
     public Point makeMove(Board board) {
-        int x, y;
-        do {
-            x = random.nextInt(board.getRows());
-            y = random.nextInt(board.getColumns());
-        } while (board.getCellStatus(x, y) != Board.Status.EMPTY && board.getCellStatus(x, y) != Board.Status.SHIP);
-        return new Point(x, y);
+        if (availableMoves.isEmpty()) {
+            throw new IllegalStateException("No more moves available");
+        }
+        int index = random.nextInt(availableMoves.size());
+        Point move = availableMoves.get(index);
+        availableMoves.remove(index);
+        return move;
     }
 }
