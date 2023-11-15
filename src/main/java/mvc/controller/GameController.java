@@ -23,8 +23,8 @@ public class GameController {
     private static AiStrategy aiStrategy;
     private static MainFrame mainFrame;
     private static GameState gameState;
-    private static Player player1;
-    private static Player player2;
+    public static Player player1;
+    public static Player player2;
     private static int boardSize;
 
     public GameController() {
@@ -40,10 +40,16 @@ public class GameController {
         }
     }
     public static void switchPanel(JPanel panel) {
-        mainFrame.getContentPane().removeAll();
-        mainFrame.getContentPane().add(panel);
-        mainFrame.getContentPane().revalidate();
-        mainFrame.getContentPane().repaint();
+        try {
+            mainFrame.getContentPane().removeAll();
+            mainFrame.getContentPane().add(panel);
+            mainFrame.getContentPane().revalidate();
+            mainFrame.getContentPane().repaint();
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(mainFrame, "Erreur lors du changement de panneau: " + e.getMessage(),
+                    "Erreur", JOptionPane.ERROR_MESSAGE);
+        }
     }
     public void initializeGame() {
         if (gameState != GameState.NOT_STARTED) {
@@ -138,17 +144,23 @@ public class GameController {
         victoryView(player2.getName());
     }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
-        player1 = new Player("Player 1", faction1, gridSize);
-        player2 = new Player("player 2", faction2, gridSize);
-        boardSize = gridSize;
+        try {
+            player1 = new Player("Player 1", faction1, gridSize);
+            player2 = new Player("player 2", faction2, gridSize);
+            boardSize = gridSize;
 
-        player2.setAI(true);
-        player1.setTurn(true);
-        player2.setTurn(false);
+            player2.setAI(true);
+            player1.setTurn(true);
+            player2.setTurn(false);
 
-        System.out.println("Player 1 : name is " + player1.getName() + ", faction is " + player1.getFaction().getName());
-        System.out.println("Player 2 : name is " + player2.getName() + ", faction is " + player2.getFaction().getName());
-        System.out.println("Grid size : " + gridSize);
+            System.out.println("Player 1 : name is " + player1.getName() + ", faction is " + player1.getFaction().getName());
+            System.out.println("Player 2 : name is " + player2.getName() + ", faction is " + player2.getFaction().getName());
+            System.out.println("Grid size : " + gridSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(mainFrame, "Erreur lors de la sélection de la faction: " + e.getMessage(),
+                    "Erreur", JOptionPane.ERROR_MESSAGE);
+        }
     }
     public static void setAiStrategy(AiStrategy aiStrategy) {
         GameController.aiStrategy = aiStrategy;
@@ -237,4 +249,5 @@ public class GameController {
     public static int getBoardSize() {
         return boardSize;
     }
+
 }
