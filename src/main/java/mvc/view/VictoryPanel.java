@@ -23,7 +23,7 @@ public class VictoryPanel extends JPanel {
         JButton buttonMainMenu = new JButton("Main Menu");
         buttonMainMenu.setAlignmentX(Component.CENTER_ALIGNMENT);
         buttonMainMenu.addActionListener(e -> {
-            GameController.switchPanel(new MainMenuPanel());
+            GameController.goToMainMenu();
         });
         add(buttonMainMenu);
     }
@@ -31,7 +31,7 @@ public class VictoryPanel extends JPanel {
         JButton buttonNewGame = new JButton("New Game");
         buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
         buttonNewGame.addActionListener(e -> {
-            GameController.switchPanel(new SelectFactionPanel());
+            GameController.newGame();
         });
         add(buttonNewGame);
     }

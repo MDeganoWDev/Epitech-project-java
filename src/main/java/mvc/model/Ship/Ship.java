@@ -1,12 +1,10 @@
 package main.java.mvc.model.Ship;
 
-import java.util.Arrays;
-
 public class Ship {
-    private String name;
+    private final String name;
     private int bowRow;
     private int bowColumn;
-    private int length;
+    private final int length;
     private boolean horizontal;
     private boolean[] hit;
 
@@ -15,7 +13,6 @@ public class Ship {
         this.length = length;
         this.hit = new boolean[length];
         this.horizontal = false;
-
     }
     public boolean shootAt(int row, int column) {
         if(horizontal) {
@@ -64,8 +61,10 @@ public class Ship {
     public void setHorizontal(boolean horizontal) {
         this.horizontal = horizontal;
     }
-    public boolean[] setHit(boolean[] hit) {
+    public void setHit(boolean[] hit) {
         this.hit = hit;
-        return this.hit;
+    }
+    public String toString() {
+        return "Size: " + getLength() + " | " + getName();
     }
 }

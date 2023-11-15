@@ -9,17 +9,25 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GamePanel extends JPanel implements GameObserver {
-    private Board offensiveBoard1;
-    private Board defensiveBoard1;
+    private final Board offensiveBoard1;
+    private final Board defensiveBoard1;
     private JPanel offensivePanel;
     private JPanel defensivePanel;
     public GamePanel(Player player1) {
         this.offensiveBoard1 = player1.getTrackingBoard();
         this.defensiveBoard1 = player1.getOwnBoard();
+        createSurrenderButton();
         createGamePanel();
     }
     public void update() {
         updateDefensivePanel();
+    }
+    private void createSurrenderButton() {
+        JButton surrenderButton = new JButton("Surrender");
+        surrenderButton.addActionListener(e -> {
+            GameController.surrender();
+        });
+        add(surrenderButton);
     }
     private void createGamePanel() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));

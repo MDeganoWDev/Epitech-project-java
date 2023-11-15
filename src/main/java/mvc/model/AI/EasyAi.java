@@ -1,13 +1,14 @@
 package main.java.mvc.model.AI;
 
+import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Board;
 import main.java.mvc.controller.GameController;
 
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
+import java.util.List;
 
 public class EasyAi implements AiStrategy {
     private final Random random = new Random();

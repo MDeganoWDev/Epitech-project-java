@@ -19,13 +19,13 @@ public class GameController {
         GAME_IN_PROGRESS,
         GAME_OVER
     }
-    private static List<GameObserver> observers = new ArrayList<>();
+    private static final List<GameObserver> observers = new ArrayList<>();
     private static AiStrategy aiStrategy;
     private static MainFrame mainFrame;
-    private static JPanel gamePanel;
     private static GameState gameState;
     private static Player player1;
     private static Player player2;
+    private static int boardSize;
 
     public GameController() {
         gameState = GameState.NOT_STARTED;
@@ -56,7 +56,7 @@ public class GameController {
         System.out.println("Game initialized");
         System.out.println("Game status : " + gameState);
 
-        switchPanel(new MainMenuPanel());
+        selectMainMenuView();
     }
     public static void selectMainMenuView() {
         if (gameState != GameState.NOT_STARTED) {
@@ -64,7 +64,6 @@ public class GameController {
                     "Game In Progress", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        gameState = GameState.NOT_STARTED;
 
         System.out.println("Game status : " + gameState);
         System.out.println("Switching to main menu view");
@@ -104,8 +103,8 @@ public class GameController {
             return;
         }
         gameState = GameState.GAME_IN_PROGRESS;
-        gamePanel = new GamePanel(player1);
-        addObserver((GamePanel) gamePanel);
+        GamePanel gamePanel = new GamePanel(player1);
+        addObserver(gamePanel);
 
         System.out.println("Game status : " + gameState);
         System.out.println("Game started");
@@ -125,9 +124,23 @@ public class GameController {
 
         switchPanel(new VictoryPanel(winner));
     }
+    public static void surrender() {
+        if (gameState != GameState.GAME_IN_PROGRESS) {
+            JOptionPane.showMessageDialog(mainFrame, "Start the game before surrendering.",
+                    "Game Not Started", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        gameState = GameState.GAME_OVER;
+
+        System.out.println("Game status : " + gameState);
+        System.out.println("Player " + player1.getName() + " surrendered");
+
+        victoryView(player2.getName());
+    }
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         player1 = new Player("Player 1", faction1, gridSize);
         player2 = new Player("player 2", faction2, gridSize);
+        boardSize = gridSize;
 
         player2.setAI(true);
         player1.setTurn(true);
@@ -178,9 +191,12 @@ public class GameController {
 
     }
     public static String attackPhase(Board ennemyBoard, int finalI, int finalJ){
-        System.out.println("Coordinates: " + finalI + ", " + finalJ);
+        if (ennemyBoard == player1.getOwnBoard()) {
+            System.out.println("Player 2 is attacking: " + finalI + ", " + finalJ);
+        } else {
+            System.out.println("Player 1 is attacking: " + finalI + ", " + finalJ);
+        }
         if (ennemyBoard.takeShot(finalI, finalJ)) {
-            System.out.println("Hit!");
             return "HIT";
         } else {
             System.out.println("Miss!");
@@ -190,10 +206,6 @@ public class GameController {
     public static void aiTurn(Board playerBoard, Board aiTrackingBoard) {
         Point aiMove = aiStrategy.makeMove(aiTrackingBoard);
         String result = attackPhase(playerBoard, aiMove.x, aiMove.y);
-
-        System.out.println("AI attack : " + aiMove.x + ", " + aiMove.y);
-        System.out.println(result);
-
         playerBoard.updateCellStatus(aiMove.x, aiMove.y, Board.Status.valueOf(result));
         notifyObservers();
     }
@@ -207,5 +219,22 @@ public class GameController {
         } else {
             gameState = GameState.GAME_IN_PROGRESS;
         }
+    }
+    public static void newGame() {
+        player1 = null;
+        player2 = null;
+        aiStrategy = null;
+        gameState = GameState.NOT_STARTED;
+        selectFactionView();
+    }
+    public static void goToMainMenu(){
+        player1 = null;
+        player2 = null;
+        aiStrategy = null;
+        gameState = GameState.NOT_STARTED;
+        selectMainMenuView();
+    }
+    public static int getBoardSize() {
+        return boardSize;
     }
 }

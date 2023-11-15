@@ -42,6 +42,7 @@ public class TestFaction {
         assertTrue(ships.contains(ship2));
     }
 
+
     @Test
     public void testSetters() {
         faction.setName("Horde");

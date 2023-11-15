@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class MediumAi implements AiStrategy {
 
+public class MediumAi implements AiStrategy{
     private final Random random = new Random();
     private final List<Point> availableMoves;
     public MediumAi() {

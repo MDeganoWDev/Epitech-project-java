@@ -9,12 +9,12 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SelectDifficultyComponent extends JPanel{
-    private JComboBox<String> comboBox;
-    private JLabel titleLabel;
+    private final JComboBox<String> comboBox;
+
     public SelectDifficultyComponent(String title) {
         setLayout(new BorderLayout());
 
-        titleLabel = new JLabel(title);
+        JLabel titleLabel = new JLabel(title);
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
 
         comboBox = new JComboBox<>();
@@ -27,6 +27,7 @@ public class SelectDifficultyComponent extends JPanel{
     }
     public AiStrategy getDifficulty() {
         String aiDifficulty = (String) comboBox.getSelectedItem();
+        assert aiDifficulty != null;
         return switch (aiDifficulty) {
             case "Easy" -> new EasyAi();
             case "Medium" -> new MediumAi();
