@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/MessagePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +32,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+
         <option value="Class" />
       </list>
     </option>
@@ -41,6 +60,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;createDifficultyAiANDUpdateTest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomHomeConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.junit.jupiter.api" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.java.mvc.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -60,6 +117,7 @@
     </key>
   </component>
   <component name="RunManager">
+
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -69,6 +127,70 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestEasyAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestEasyAi" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestEasyAi.testMakeMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestEasyAi" />
+      <option name="METHOD_NAME" value="testMakeMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMediumAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestMediumAi" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPlayer.testBoardModification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestPlayer" />
+      <option name="METHOD_NAME" value="testBoardModification" />
+      <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +198,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.TestMediumAi" />
+        <item itemvalue="JUnit.TestEasyAi.testMakeMove" />
+        <item itemvalue="JUnit.TestEasyAi" />
+        <item itemvalue="JUnit.TestPlayer.testBoardModification" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +215,29 @@
       <updated>1700036631449</updated>
       <workItem from="1700036633196" duration="14264000" />
     </task>
+    <task id="LOCAL-00001" summary="base">
+      <option name="closed" value="true" />
+      <created>1699891256017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699891256017</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base" />
+      <created>1699901384370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699901384370</updated>
+      <workItem from="1699901385667" duration="2113000" />
+      <workItem from="1699903530447" duration="5370000" />
+      <workItem from="1699951627403" duration="6472000" />
+      <workItem from="1699958197389" duration="1026000" />
+      <workItem from="1699911739574" duration="628000" />
+      <workItem from="1699945797349" duration="11953000" />
+      <workItem from="1700038014186" duration="3047000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
