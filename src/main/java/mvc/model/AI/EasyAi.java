@@ -2,8 +2,6 @@ package main.java.mvc.model.AI;
 
 import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Board;
-import main.java.mvc.controller.GameController;
-
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -21,7 +19,7 @@ public class EasyAi implements AiStrategy {
                 availableMoves.add(new Point(x, y));
             }
         }
-    }
+    }@Override
     public Point makeMove(Board board) {
         if (availableMoves.isEmpty()) {
             throw new IllegalStateException("No more moves available");
