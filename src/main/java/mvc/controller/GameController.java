@@ -109,7 +109,7 @@ public class GameController {
             return;
         }
         gameState = GameState.GAME_IN_PROGRESS;
-        GamePanel gamePanel = new GamePanel(player1);
+        GamePanel gamePanel = new GamePanel(player1, boardSize);
         addObserver(gamePanel);
 
         System.out.println("Game status : " + gameState);
