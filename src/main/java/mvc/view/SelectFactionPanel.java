@@ -7,15 +7,30 @@ import main.java.mvc.view.component.SelectFactionComponent;
 import main.java.mvc.view.component.SelectGridSizeComponent;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class SelectFactionPanel extends JPanel {
     private JPanel faction1Selection;
     private JPanel faction2Selection;
     private JPanel gridSelection;
     private JPanel difficultySelection;
+    private Image backgroundImage;
     public SelectFactionPanel() {
         createExistingComponent();
         createValidateButton();
+        try {
+            backgroundImage = new ImageIcon("src/main/resources/SelectFaction.png").getImage();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (backgroundImage != null) {
+            int x = (this.getWidth() - backgroundImage.getWidth(null)) / 2;
+            int y = (this.getHeight() - backgroundImage.getHeight(null)) / 2;
+            g.drawImage(backgroundImage, x, y, this);
+        }
     }
     private void createExistingComponent() {
         this.faction1Selection = new SelectFactionComponent("Select Faction 1");

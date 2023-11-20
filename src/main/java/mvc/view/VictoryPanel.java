@@ -6,10 +6,23 @@ import javax.swing.*;
 import java.awt.*;
 
 public class VictoryPanel extends JPanel {
+private Image backgroundImage;
     public VictoryPanel(String winner) {
         initializeUI(winner);
+        try {
+            backgroundImage = new ImageIcon("src/main/resources/Endgame.png").getImage();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (backgroundImage != null) {
+            int x = (this.getWidth() - backgroundImage.getWidth(null)) / 2;
+            int y = (this.getHeight() - backgroundImage.getHeight(null)) / 2;
+            g.drawImage(backgroundImage, x, y, this);
+        }
+    }
     private void initializeUI(String winner) {
         JLabel victoryLabel = new JLabel(winner + " won the game!");
         victoryLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
