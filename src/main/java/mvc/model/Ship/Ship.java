@@ -1,5 +1,9 @@
 package main.java.mvc.model.Ship;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Ship {
     private final String name;
     private int bowRow;
@@ -33,6 +37,15 @@ public class Ship {
             if (!touch) return false;
         }
         return true;
+    }
+    public List<Point> getShipLocation() {
+        List<Point> shipLocation = new ArrayList<>();
+        for (int i = 0; i < length; i++) {
+            int currentRow = horizontal ? bowRow : bowRow + i;
+            int currentColumn = horizontal ? bowColumn + i : bowColumn;
+            shipLocation.add(new Point(currentRow, currentColumn));
+        }
+        return shipLocation;
     }
     public String getName() {
         return this.name;

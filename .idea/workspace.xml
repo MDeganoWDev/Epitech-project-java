@@ -17,13 +17,20 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/VeryEasyAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/VeryHardAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
 
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/HardAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/HardAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
 
     </list>
@@ -107,13 +114,20 @@
   </component>
 
   <component name="RunManager" selected="JUnit.TestBarbeRousse">
-
   <component name="RunManager" selected="Application.Application">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+
+    "git-widget-placeholder": "addingBackgroudImages",
+    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "git-widget-placeholder": "refactoringAiModele",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -121,7 +135,7 @@
     "settings.editor.selected.configurable": "AtomHomeConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.java.mvc.view.component" />
@@ -229,7 +243,7 @@
       <workItem from="1700206397200" duration="3744000" />
       <workItem from="1700223011552" duration="603000" />
       <workItem from="1700466974290" duration="621000" />
-      <workItem from="1700467939474" duration="6108000" />
+      <workItem from="1700467939474" duration="25786000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <option name="closed" value="true" />

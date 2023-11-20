@@ -1,9 +1,12 @@
 package main.java.mvc.model;
 
+import jdk.jshell.Snippet;
 import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Ship.Ship;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -114,6 +117,20 @@ public class Board {
             return false;
         }
         return false;
+    }
+    public Ship getShip(Point point){
+        for (Ship ship : ships) {
+            if (ship.isHorizontal()) {
+                if (ship.getBowRow() == point.x && ship.getBowColumn() <= point.y && ship.getBowColumn() + ship.getLength() > point.y) {
+                    return ship;
+                }
+            } else {
+                if (ship.getBowColumn() == point.y && ship.getBowRow() <= point.x && ship.getBowRow() + ship.getLength() > point.x) {
+                    return ship;
+                }
+            }
+        }
+        return null;
     }
     public Status getCellStatus(int row, int col) {
         return grid[row][col];
