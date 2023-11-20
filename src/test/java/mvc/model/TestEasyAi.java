@@ -15,16 +15,11 @@ public class TestEasyAi {
     public void testMakeMove() {
         AiStrategy easyAi = new EasyAi();
         Board board = new Board(20);
-
-        // S'assure que les mouvements générés sont valides
         for (int i = 0; i < 100; i++) {
             Point move = easyAi.makeMove(board);
-
             assertTrue(move.x >= 0 && move.x < board.getRows());
             assertTrue(move.y >= 0 && move.y < board.getColumns());
             assertTrue(board.getCellStatus(move.x, move.y) == Board.Status.EMPTY || board.getCellStatus(move.x, move.y) == Board.Status.SHIP);
         }
     }
-
-
 }

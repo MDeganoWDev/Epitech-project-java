@@ -2,6 +2,7 @@ package main.java.mvc.model;
 
 import main.java.mvc.model.Ship.Ship;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -14,7 +15,10 @@ public class Board {
     private final int columns;
     public List<Ship> ships = new ArrayList<>();
     private final Status[][] grid;
+    private Point lastHit;
+
     public Board(int size) {
+        lastHit = null;
         if (size < 10) {
             size = 10;
         } else if (size > 20) {
@@ -107,6 +111,7 @@ public class Board {
                     return true;
                 }
             }
+            lastHit = new Point(row, col);
             return true;
         } else if (status == Status.EMPTY) {
             updateCellStatus(row, col, Status.MISS);
@@ -137,5 +142,17 @@ public class Board {
         }
         ships.clear();
         System.out.println("Board reset");
+    }
+
+    public Point getLastHit() {
+        return lastHit;
+    }
+
+    public boolean hasRecentHit() {
+        return lastHit != null;
+    }
+
+    public boolean isValidMove(int row, int col) {
+        return row >= 0 && row < rows && col >= 0 && col < columns && grid[row][col] == Status.EMPTY;
     }
 }

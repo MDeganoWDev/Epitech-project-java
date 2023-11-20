@@ -5,22 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestPortugalResult.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
-    <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/BarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/BarbeRousse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Espagne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Espagne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/France.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/France.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Portugal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Portugal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-reports/TestBigMom.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-reports/TestBoardResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestBoardResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-reports/TestPlayer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestPlayerResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-reports/TestStrawhatResult.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,21 +45,28 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-
         <option value="JUnit3 Test Class" />
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Interface" />
-
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YFajtTKfQDyP64txI7jLq7ergI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,25 +74,20 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;createDifficultyAiANDUpdateTest&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;createMediumAI&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomHomeConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,15 +103,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Application">
-
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "createFaction",
-    "node.js.selected.package.tslint": "(autodetect)"
-  }
-}]]></component>
-  <component name="RunManager">
-
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -104,58 +112,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEasyAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestEasyAi" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestEasyAi.testMakeMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestEasyAi" />
-      <option name="METHOD_NAME" value="testMakeMove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMediumAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestMediumAi" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPlayer.testBoardModification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
@@ -165,9 +126,53 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.TestPlayer" />
-      <option name="METHOD_NAME" value="testBoardModification" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPortugal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPortugal.testPortugalShips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
+      <option name="METHOD_NAME" value="testPortugalShips" />
       <option name="TEST_OBJECT" value="method" />
-
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestShip" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,15 +180,15 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.TestMediumAi" />
-        <item itemvalue="JUnit.TestEasyAi.testMakeMove" />
-        <item itemvalue="JUnit.TestEasyAi" />
-        <item itemvalue="JUnit.TestPlayer.testBoardModification" />
+        <item itemvalue="JUnit.TestPortugal" />
+        <item itemvalue="JUnit.TestPortugal.testPortugalShips" />
+        <item itemvalue="JUnit.TestShip" />
+        <item itemvalue="JUnit.TestPlayer" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-
     <task id="LOCAL-00001" summary="base">
       <option name="closed" value="true" />
       <created>1699891256017</created>
@@ -205,9 +210,30 @@
       <workItem from="1699911739574" duration="628000" />
       <workItem from="1699945797349" duration="11953000" />
       <workItem from="1700038014186" duration="3047000" />
+      <workItem from="1700123933703" duration="1197000" />
+      <workItem from="1700415725410" duration="7697000" />
+      <workItem from="1700469310389" duration="5063000" />
     </task>
     <option name="localTasksCounter" value="2" />
-
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/T_JAV_501_TLS_2$TestPortugal.ic" NAME="TestPortugal Coverage Results" MODIFIED="1700416550100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
   </component>
 </project>
