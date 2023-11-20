@@ -27,7 +27,7 @@ public class EasyAi implements AiStrategy {
                 availableMoves.add(new Point(x, y));
             }
         }
-    }
+    }@Override
     public Point makeMove(Board board) {
         if (availableMoves.isEmpty()) {
             throw new IllegalStateException("No more moves available");

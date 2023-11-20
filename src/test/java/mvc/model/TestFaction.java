@@ -1,44 +1,41 @@
 package model;
-
 import main.java.mvc.model.Faction.Faction;
 import main.java.mvc.model.Ship.Ship;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-
 public class TestFaction {
+
     private Faction faction;
+    private Ship ship1;
+    private Ship ship2;
 
     @Before
     public void setUp() {
         faction = new Faction("Test Faction");
+        ship1 = new Ship("Ship1",1);
+        ship2 = new Ship("Ship2",2);
     }
 
     @Test
-    public void testGetName() {
+    public void testFactionName() {
         assertEquals("Test Faction", faction.getName());
     }
 
     @Test
-    public void testBonjour(){
-        System.out.println("Bonjour");
-    }
-
-    @Test
     public void testAddShip() {
-        Ship ship1 = new Ship("Ship 1", 3);
-        Ship ship2 = new Ship("Ship 2", 4);
-
         faction.addShip(ship1);
         faction.addShip(ship2);
 
         List<Ship> ships = faction.getShips();
+
+        assertTrue(ships.contains(ship1));
+        assertTrue(ships.contains(ship2));
         assertEquals(2, ships.size());
-        assertEquals("Ship 1", ships.get(0).getName());
-        assertEquals("Ship 2", ships.get(1).getName());
+
     }
+
 }

@@ -13,6 +13,6 @@ public class Espagne extends Faction{
         super.addShip(new Ship3("El Cazador"));
         super.addShip(new Ship2("La Rápida"));
         super.addShip(new Ship1("El Pequeño"));
-        super.addShip(new Ship1("El Ágil "));
+        super.addShip(new Ship1("El Ágil"));
     }
 }
