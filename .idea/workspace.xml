@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestPortugalResult.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/BarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/BarbeRousse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Espagne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Espagne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/France.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/France.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Portugal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Faction/Portugal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestShip4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-reports/TestBigMom.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-reports/TestBoardResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestBoardResult.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-reports/TestPlayer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestPlayerResult.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-reports/TestStrawhatResult.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +72,7 @@
       <recent name="test.java.mvc.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.TestBarbeRousse">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -116,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBarbeRousse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +95,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPlayer" />
+      <option name="MAIN_CLASS_NAME" value="model.TestBarbeRousse" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestBarbeRousse" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.TestPortugal" />
         <item itemvalue="JUnit.TestPortugal.testPortugalShips" />
         <item itemvalue="JUnit.TestShip" />
-        <item itemvalue="JUnit.TestPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -212,24 +182,13 @@
       <workItem from="1700038014186" duration="3047000" />
       <workItem from="1700123933703" duration="1197000" />
       <workItem from="1700415725410" duration="7697000" />
-      <workItem from="1700469310389" duration="5063000" />
+      <workItem from="1700469310389" duration="5507000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/T_JAV_501_TLS_2$TestPortugal.ic" NAME="TestPortugal Coverage Results" MODIFIED="1700416550100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
