@@ -1,10 +1,8 @@
-package main.java;
-
-import main.java.mvc.controller.GameController;
+package main.java.mvc.controller;
 
 import javax.swing.SwingUtilities;
 
-public class Application {
+public class StartApp {
 
     /**
      * Main method

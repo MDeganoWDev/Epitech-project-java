@@ -1,15 +1,15 @@
 Bienvenue sur le projet de création de notre jeux Bataille Navale en Java.
 
 ## Equipe
-- Talal BOUNAAMA
 - Matteo DEGANO
+- Talal BOUNAAMA
 
 ## Consigne
 - Faire un jeux 2D en 2 semaines
 - Utiliser Java
 
 ## Prérequis
-- Java version "19.0.2"
+- Java version "21.0.1"
 - JDK version 21
 
 ## Installation
