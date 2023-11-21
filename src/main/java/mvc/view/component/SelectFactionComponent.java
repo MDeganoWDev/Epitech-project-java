@@ -8,6 +8,10 @@ import java.awt.*;
 public class SelectFactionComponent extends JPanel{
     private final JComboBox<String> comboBox;
 
+    /**
+     * Constructor for the SelectFactionComponent class
+     * @param title String
+     */
     public SelectFactionComponent(String title) {
         setLayout(new BorderLayout());
 
@@ -25,6 +29,11 @@ public class SelectFactionComponent extends JPanel{
         add(titleLabel, BorderLayout.NORTH);
         add(comboBox, BorderLayout.CENTER);
     }
+
+    /**
+     * Gets the faction
+     * @return Faction object
+     */
     public Faction getFaction() {
         String factionName = (String) comboBox.getSelectedItem();
         assert factionName != null;
@@ -36,7 +45,6 @@ public class SelectFactionComponent extends JPanel{
             case "Barbe Noire" -> new BarbeNoire();
             case "Barbe Rousse" -> new BarbeRousse();
             default -> throw new IllegalStateException("Unexpected value: " + factionName);
-
         };
     }
 }

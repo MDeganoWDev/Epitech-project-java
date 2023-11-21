@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Represents a hard difficulty AI for a battleship game.
+ * This AI strategy is a balance between random moves and targeting potential ship locations
+ * after a successful hit.
+ * It also switches to known ship locations after 5 turns.
+ */
 public class HardAi implements AiStrategy{
     private final Random random = new Random();
     private final Board boardPlayer1;
@@ -20,6 +26,10 @@ public class HardAi implements AiStrategy{
     private final List<Point> knowLocations;
     private int turn = 1;
 
+    /**
+     * Constructor for HardAi. Initializes the list of available moves and potential hits
+     * based on the size of the game board.
+     */
     public HardAi() {
         this.boardPlayer1 = GameController.player1.getOwnBoard();
         int size = GameController.getBoardSize();
@@ -32,6 +42,15 @@ public class HardAi implements AiStrategy{
             }
         }
     }
+
+    /**
+     * Chooses the next move for the AI player. It prioritizes moves around the last successful hit,
+     * if available, otherwise makes a random choice.
+     *
+     * @param board The current state of the game board (not used in this strategy).
+     * @return The Point object representing the coordinates of the chosen move.
+     * @throws IllegalStateException if no moves are available.
+     */
     public Point makeMove(Board board) {
         if (!init) setKnowLocations();
         if (availableMoves.isEmpty()) {
@@ -58,18 +77,37 @@ public class HardAi implements AiStrategy{
         testCell(move);
         return move;
     }
+
+    /**
+     * Adds potential hit points around a given hit point, considering only orthogonal directions.
+     *
+     * @param initialHit The point where the last hit occurred.
+     */
     public void addPotentialHits(Point initialHit){
         checkPotentialHit(initialHit.x + 1, initialHit.y);
         checkPotentialHit(initialHit.x - 1, initialHit.y);
         checkPotentialHit(initialHit.x, initialHit.y + 1);
         checkPotentialHit(initialHit.x, initialHit.y - 1);
     }
+
+    /**
+     * Checks and adds a point to potential hits if it's within the board and not already hit.
+     *
+     * @param x The x-coordinate of the point to check.
+     * @param y The y-coordinate of the point to check.
+     */
     private void checkPotentialHit(int x, int y) {
         Point potentialHit = new Point(x, y);
         if (x >= 0 && y >= 0 && x < GameController.getBoardSize() && y < GameController.getBoardSize() && availableMoves.contains(potentialHit)) {
             potentialHits.add(potentialHit);
         }
     }
+
+    /**
+     * Checks the status of a cell and updates the AI's state accordingly.
+     *
+     * @param cell The coordinates of the cell to check.
+     */
     public void testCell(Point cell){
         Board.Status status = boardPlayer1.getCellStatus(cell.x, cell.y);
         if (status == Board.Status.SHIP) {
@@ -78,6 +116,10 @@ public class HardAi implements AiStrategy{
             addPotentialHits(cell);
         }
     }
+
+    /**
+     * Checks if the last hit ship is sunk and updates the state of the AI.
+     */
     public void isShipSunk(){
         if (this.shipTouched != null && this.shipTouched.isSunk()) {
             this.isHit = false;
@@ -85,6 +127,10 @@ public class HardAi implements AiStrategy{
             this.potentialHits.clear();
         }
     }
+
+    /**
+     * Sets the list of known ship locations.
+     */
     private void setKnowLocations(){
         for (int i = 0; i < GameController.getBoardSize(); i++) {
             for (int j = 0; j < GameController.getBoardSize(); j++) {
@@ -95,6 +141,12 @@ public class HardAi implements AiStrategy{
         }
         init = true;
     }
+
+    /**
+     * Switches to known locations after 5 turns.
+     *
+     * @return The Point object representing the coordinates of the chosen move.
+     */
     public Point switchToKnowLocations(){
         int index = random.nextInt(knowLocations.size());
         Point move = knowLocations.get(index);

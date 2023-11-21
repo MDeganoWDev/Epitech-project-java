@@ -7,6 +7,12 @@ import java.awt.*;
 
 public class VictoryPanel extends JPanel {
 private Image backgroundImage;
+
+    /**
+     * Constructor for the VictoryPanel class
+     * Creates the victory panel
+     * @param winner String
+     */
     public VictoryPanel(String winner) {
         initializeUI(winner);
         try {
@@ -15,6 +21,11 @@ private Image backgroundImage;
             e.printStackTrace();
         }
     }
+
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (backgroundImage != null) {
@@ -23,6 +34,11 @@ private Image backgroundImage;
             g.drawImage(backgroundImage, x, y, this);
         }
     }
+
+    /**
+     * Initializes the UI
+     * @param winner String
+     */
     private void initializeUI(String winner) {
         JLabel victoryLabel = new JLabel(winner + " won the game!");
         victoryLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -32,6 +48,10 @@ private Image backgroundImage;
         createNewGameButton();
         createQuitButton();
     }
+
+    /**
+     * Creates the main menu button
+     */
     private void createMainMenuButton() {
         JButton buttonMainMenu = new JButton("Main Menu");
         buttonMainMenu.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -40,6 +60,10 @@ private Image backgroundImage;
         });
         add(buttonMainMenu);
     }
+
+    /**
+     * Creates the new game button
+     */
     private void createNewGameButton() {
         JButton buttonNewGame = new JButton("New Game");
         buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -48,6 +72,10 @@ private Image backgroundImage;
         });
         add(buttonNewGame);
     }
+
+    /**
+     * Creates the quit button
+     */
     private void createQuitButton() {
         JButton buttonQuit = new JButton("Quit");
         buttonQuit.setAlignmentX(Component.CENTER_ALIGNMENT);
