@@ -45,6 +45,7 @@ public class EasyAi implements AiStrategy {
      * @return The Point object representing the coordinates of the chosen move.
      * @throws IllegalStateException if there are no more moves available.
      */
+
     public Point makeMove(Board board) {
         if (availableMoves.isEmpty()) {
             throw new IllegalStateException("No more moves available");
