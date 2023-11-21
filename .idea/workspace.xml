@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run_app.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_app.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/main/java/Application.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/main/java/Application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/StartApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_app.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_app.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/BackgroundGamePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +34,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MDeganoWDev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="620bc40d-ef60-4659-8b35-fee413feabdc" />
+        <option name="url" value="git@github.com:MDeganoWDev/Epitech-project-java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,8 +69,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "addingDoc",
-    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
+    "git-widget-placeholder": "addingReadMe",
+    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/test-reports",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -61,9 +84,11 @@
       <recent name="main.java.mvc.view.component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\test-reports" />
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale" />
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\test" />
     </key>
   </component>
@@ -121,11 +146,14 @@
       <workItem from="1700501619376" duration="5671000" />
       <workItem from="1700553842190" duration="3904000" />
       <workItem from="1700559461112" duration="1320000" />
-      <workItem from="1700560887129" duration="12942000" />
+      <workItem from="1700560887129" duration="17752000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ps1" />
   </component>
 </project>

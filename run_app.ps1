@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Navigate to the src directory
 cd src
 
