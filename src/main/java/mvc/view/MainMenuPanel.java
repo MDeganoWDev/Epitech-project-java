@@ -7,6 +7,11 @@ import java.awt.*;
 
 public class MainMenuPanel extends JPanel {
     private Image backgroundImage;
+
+    /**
+     * Constructor for the MainMenuPanel class
+     * Creates the main menu panel
+     */
     public MainMenuPanel() {
         initializeUI();
         try {
@@ -15,6 +20,11 @@ public class MainMenuPanel extends JPanel {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (backgroundImage != null) {
@@ -23,12 +33,20 @@ public class MainMenuPanel extends JPanel {
             g.drawImage(backgroundImage, x, y, this);
         }
     }
+
+    /**
+     * Initializes the UI
+     */
     private void initializeUI() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         createNewGameButton();
         createQuitButton();
     }
+
+    /**
+     * Creates the new game button
+     */
     private void createNewGameButton(){
         JButton buttonNewGame = new JButton("New Game");
         buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -37,6 +55,10 @@ public class MainMenuPanel extends JPanel {
         });
         add(buttonNewGame);
     }
+
+    /**
+     * Creates the quit button
+     */
     private void createQuitButton() {
         JButton buttonQuit = new JButton("Quit");
         buttonQuit.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -45,5 +67,4 @@ public class MainMenuPanel extends JPanel {
         });
         add(buttonQuit);
     }
-
 }

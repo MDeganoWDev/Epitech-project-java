@@ -20,12 +20,19 @@ public class ShipPlacementPanel extends JPanel {
     private JButton toggleOrientationButton;
     private boolean horizontalPlacement = true;
 
+    /**
+     * Constructor for the ShipPlacementPanel class
+     * @param player Player object
+     */
     public ShipPlacementPanel(Player player) {
         this.player = player;
         initializeComponents();
         initializeButton();
     }
 
+    /**
+     * Initializes the components
+     */
     private void initializeComponents() {
         setLayout(new BorderLayout());
 
@@ -40,6 +47,10 @@ public class ShipPlacementPanel extends JPanel {
         add(boardPanel, BorderLayout.CENTER);
 
     }
+
+    /**
+     * Initializes the button
+     */
     private void initializeButton(){
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         add(buttonPanel, BorderLayout.SOUTH);
@@ -49,6 +60,10 @@ public class ShipPlacementPanel extends JPanel {
         startGameButton();
         toggleOrientationButton();
     }
+
+    /**
+     * Creates the place all ships button
+     */
     private void placeAllShipsButton(){
         JButton placeAllShipsButton = new JButton("Place All Ships");
         placeAllShipsButton.addActionListener(e -> {
@@ -60,6 +75,10 @@ public class ShipPlacementPanel extends JPanel {
         });
         this.buttonPanel.add(placeAllShipsButton);
     }
+
+    /**
+     * Creates the reset button
+     */
     private void resetButton(){
         JButton resetButton = new JButton("Reset Ships");
         resetButton.addActionListener(e -> {
@@ -68,6 +87,10 @@ public class ShipPlacementPanel extends JPanel {
         });
         this.buttonPanel.add(resetButton);
     }
+
+    /**
+     * Creates the start game button
+     */
     private void startGameButton(){
         JButton startGameButton = new JButton("Start Game");
         startGameButton.addActionListener(e -> {
@@ -83,6 +106,10 @@ public class ShipPlacementPanel extends JPanel {
         });
         this.buttonPanel.add(startGameButton);
     }
+
+    /**
+     * Creates the toggle orientation button
+     */
     private void toggleOrientationButton(){
         this.toggleOrientationButton = new JButton("Toggle Orientation : Horizontal");
         toggleOrientationButton.addActionListener(e -> {
@@ -92,6 +119,12 @@ public class ShipPlacementPanel extends JPanel {
         });
         this.buttonPanel.add(toggleOrientationButton);
     }
+
+    /**
+     * Creates the board panel
+     * @param board Board object
+     * @return JPanel object
+     */
     private JPanel createBoardPanel(Board board) {
         JPanel panel = new JPanel(new GridLayout(board.getRows(), board.getColumns()));
         for (int row = 0; row < board.getRows(); row++) {
@@ -121,6 +154,11 @@ public class ShipPlacementPanel extends JPanel {
         return panel;
     }
 
+    /**
+     * Updates the board UI
+     * @param boardPanel JPanel object
+     * @param board Board object
+     */
     private void updateBoardUI(JPanel boardPanel, Board board) {
         Component[] components = boardPanel.getComponents();
         int columns = board.getColumns();
@@ -137,12 +175,19 @@ public class ShipPlacementPanel extends JPanel {
             }
         }
     }
+
+    /**
+     * Resets the ship placement
+     */
     private void resetShipPlacement() {
         player.getOwnBoard().resetBoard();
         updateBoardUI(boardPanel, player.getOwnBoard());
         resetShipList();
     }
 
+    /**
+     * Resets the ship list
+     */
     private void resetShipList() {
         shipListModel.clear();
         player.getFaction().getShips().forEach(shipListModel::addElement);

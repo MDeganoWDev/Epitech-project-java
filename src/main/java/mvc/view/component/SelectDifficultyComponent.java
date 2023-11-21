@@ -8,6 +8,10 @@ import java.awt.*;
 public class SelectDifficultyComponent extends JPanel{
     private final JComboBox<String> comboBox;
 
+    /**
+     * Constructor for the SelectDifficultyComponent class
+     * @param title String
+     */
     public SelectDifficultyComponent(String title) {
         setLayout(new BorderLayout());
 
@@ -24,6 +28,11 @@ public class SelectDifficultyComponent extends JPanel{
         add(titleLabel, BorderLayout.NORTH);
         add(comboBox, BorderLayout.CENTER);
     }
+
+    /**
+     * Gets the difficulty
+     * @return AiStrategy object
+     */
     public AiStrategy getDifficulty() {
         String aiDifficulty = (String) comboBox.getSelectedItem();
         assert aiDifficulty != null;

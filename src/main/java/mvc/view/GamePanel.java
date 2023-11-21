@@ -20,6 +20,11 @@ public class GamePanel extends JPanel implements GameObserver {
     private JPanel defensivePanel;
     private Image backgroundImage;
 
+    /**
+     * Constructor for the GamePanel class
+     * @param player1 Player object
+     * @param boardSize int
+     */
     public GamePanel(Player player1, int boardSize) {
         this.boardSize = boardSize ;
         this.offensiveBoard1 = player1.getTrackingBoard();
@@ -27,26 +32,35 @@ public class GamePanel extends JPanel implements GameObserver {
 
         JPanel gamePanel = new JPanel();
         gamePanel.setLayout(new BoxLayout(gamePanel, BoxLayout.Y_AXIS));
+        gamePanel.setBackground(new Color(0, 0, 0, 0));
+        gamePanel.setOpaque(false);
         add(gamePanel);
 
         gameBoardPanel = new JPanel();
         gameBoardPanel.setLayout(new BoxLayout(gameBoardPanel, BoxLayout.X_AXIS));
+        gameBoardPanel.setBackground(new Color(0, 0, 0, 0));
+        gameBoardPanel.setOpaque(false);
+        createGamePanel();
+        gamePanel.add(gameBoardPanel, BorderLayout.CENTER);
 
         buttonPanel = new JPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.X_AXIS));
         buttonPanel.setBackground(new Color(0, 0, 0, 0));
         buttonPanel.setOpaque(false);
-
-        createGamePanel();
-        gamePanel.add(gameBoardPanel);
         createSurrenderButton();
-        gamePanel.add(buttonPanel);
+        gamePanel.add(buttonPanel, BorderLayout.SOUTH);
+
         try {
             backgroundImage = new ImageIcon("src/main/resources/Battle.png").getImage();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (backgroundImage != null) {
@@ -55,24 +69,36 @@ public class GamePanel extends JPanel implements GameObserver {
             g.drawImage(backgroundImage, x, y, this);
         }
     }
+
+    /**
+     * Updates the defensive panel
+     * Use the observer pattern
+     */
     public void update() {
         updateDefensivePanel();
     }
 
+    /**
+     * Creates the surrender button
+     */
     private void createSurrenderButton() {
         JButton surrenderButton = new JButton("Surrender");
         surrenderButton.addActionListener(e -> GameController.surrender());
         buttonPanel.add(surrenderButton);
     }
+
+    /**
+     * Creates the game panel
+     */
     private void createGamePanel() {
         setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 
         if (boardSize == 20) {
-            this.cellSize = 20;
-        } else if (boardSize >= 15) {
             this.cellSize = 25;
-        } else {
+        } else if (boardSize >= 15) {
             this.cellSize = 30;
+        } else {
+            this.cellSize = 35;
         }
 
         Dimension panelSize = new Dimension(boardSize * this.cellSize, boardSize * this.cellSize);
@@ -94,12 +120,16 @@ public class GamePanel extends JPanel implements GameObserver {
         createOffensiveBoard();
         createDefensiveBoard();
 
-        Component gap = Box.createRigidArea(new Dimension(20, 0));
-
+        gameBoardPanel.add(Box.createHorizontalGlue());
         gameBoardPanel.add(offensivePanel);
-        gameBoardPanel.add(gap);
+        gameBoardPanel.add(Box.createHorizontalStrut(80));
         gameBoardPanel.add(defensivePanel);
+        gameBoardPanel.add(Box.createHorizontalGlue());
     }
+
+    /**
+     * Creates the offensive board
+     */
     private void createOffensiveBoard() {
 
         offensivePanel.setLayout(new GridBagLayout());
@@ -140,6 +170,10 @@ public class GamePanel extends JPanel implements GameObserver {
             }
         }
     }
+
+    /**
+     * Creates the defensive board
+     */
     private void createDefensiveBoard() {
         defensivePanel.setLayout(new GridBagLayout());
         defensivePanel.setOpaque(false);
@@ -175,6 +209,10 @@ public class GamePanel extends JPanel implements GameObserver {
             }
         }
     }
+
+    /**
+     * Updates the defensive panel
+     */
     private void updateDefensivePanel() {
         for (int i = 0; i < defensiveBoard1.getRows(); i++) {
             for (int j = 0; j < defensiveBoard1.getColumns(); j++) {
