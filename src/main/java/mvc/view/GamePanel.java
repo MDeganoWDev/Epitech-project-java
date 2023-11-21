@@ -12,9 +12,10 @@ import java.awt.*;
 public class GamePanel extends JPanel implements GameObserver {
     private final int boardSize;
     private  int cellSize;
-    private  Dimension panelSize;
     private final Board offensiveBoard1;
     private final Board defensiveBoard1;
+    private final JPanel gameBoardPanel;
+    private final JPanel buttonPanel;
     private JPanel offensivePanel;
     private JPanel defensivePanel;
     private Image backgroundImage;
@@ -23,10 +24,23 @@ public class GamePanel extends JPanel implements GameObserver {
         this.boardSize = boardSize ;
         this.offensiveBoard1 = player1.getTrackingBoard();
         this.defensiveBoard1 = player1.getOwnBoard();
-        JPanel gameBoardPanel = new JPanel();
-        gameBoardPanel.setLayout(new BoxLayout(gameBoardPanel, BoxLayout.Y_AXIS));
+
+        JPanel gamePanel = new JPanel();
+        gamePanel.setLayout(new BoxLayout(gamePanel, BoxLayout.Y_AXIS));
+        add(gamePanel);
+
+        gameBoardPanel = new JPanel();
+        gameBoardPanel.setLayout(new BoxLayout(gameBoardPanel, BoxLayout.X_AXIS));
+
+        buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.X_AXIS));
+        buttonPanel.setBackground(new Color(0, 0, 0, 0));
+        buttonPanel.setOpaque(false);
+
         createGamePanel();
-        createBottomPanel();
+        gamePanel.add(gameBoardPanel);
+        createSurrenderButton();
+        gamePanel.add(buttonPanel);
         try {
             backgroundImage = new ImageIcon("src/main/resources/Battle.png").getImage();
         } catch (Exception e) {
@@ -45,15 +59,10 @@ public class GamePanel extends JPanel implements GameObserver {
         updateDefensivePanel();
     }
 
-    private void createBottomPanel() {
-        JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        bottomPanel.add(createSurrenderButton());
-    }
-
-    private JButton createSurrenderButton() {
+    private void createSurrenderButton() {
         JButton surrenderButton = new JButton("Surrender");
         surrenderButton.addActionListener(e -> GameController.surrender());
-        return surrenderButton;
+        buttonPanel.add(surrenderButton);
     }
     private void createGamePanel() {
         setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
@@ -66,7 +75,7 @@ public class GamePanel extends JPanel implements GameObserver {
             this.cellSize = 30;
         }
 
-        this.panelSize = new Dimension(boardSize * this.cellSize, boardSize * this.cellSize);
+        Dimension panelSize = new Dimension(boardSize * this.cellSize, boardSize * this.cellSize);
 
         offensivePanel = new BackgroundGamePanel("src/main/resources/Ocean.jpg");
         defensivePanel = new BackgroundGamePanel("src/main/resources/Ocean.jpg");
@@ -85,9 +94,11 @@ public class GamePanel extends JPanel implements GameObserver {
         createOffensiveBoard();
         createDefensiveBoard();
 
-        add(offensivePanel);
-        add(Box.createRigidArea(new Dimension(20, 0)));
-        add(defensivePanel);
+        Component gap = Box.createRigidArea(new Dimension(20, 0));
+
+        gameBoardPanel.add(offensivePanel);
+        gameBoardPanel.add(gap);
+        gameBoardPanel.add(defensivePanel);
     }
     private void createOffensiveBoard() {
 

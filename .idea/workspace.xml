@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/BackgroundGamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Battle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Ocean.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;addingAllAiDifficulty&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;upgradeGamePanelView&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -100,7 +94,8 @@
       <workItem from="1700223011552" duration="603000" />
       <workItem from="1700466974290" duration="621000" />
       <workItem from="1700467939474" duration="27795000" />
-      <workItem from="1700501619376" duration="4097000" />
+      <workItem from="1700501619376" duration="5671000" />
+      <workItem from="1700553842190" duration="1338000" />
     </task>
     <servers />
   </component>
