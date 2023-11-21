@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" afterDir="false" />
+    <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/run_app.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/main/java/Application.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/main/java/Application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/StartApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="AnnotationType" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -34,56 +30,50 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2Y8JgXFgluYEPGX7A82zTrSs1uf" />
+  <component name="ProjectId" id="2YCjnW6myuQlinGfO6cpi1rnQp3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "addingAiEasy",
-    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale",
+    "git-widget-placeholder": "addingDoc",
+    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "AtomHomeConfigurable",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.junit.jupiter.api" />
+      <recent name="main.java.mvc.view.component" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="test.java.mvc.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\test" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.Application" />
+  <component name="RunManager" selected="Application.StartApp">
+    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.mvc.controller.StartApp" />
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.*" />
+          <option name="PATTERN" value="main.java.mvc.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,51 +81,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in BatailleNavale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.StartApp" />
+      <item itemvalue="JUnit.All in BatailleNavale" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.StartApp" />
+        <item itemvalue="JUnit.All in BatailleNavale" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="base">
-      <option name="closed" value="true" />
-      <created>1699891256017</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699891256017</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base" />
-      <created>1699901384370</created>
+      <changelist id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="" />
+      <created>1700036631449</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699901384370</updated>
-      <workItem from="1699901385667" duration="2113000" />
-      <workItem from="1699911739574" duration="628000" />
-      <workItem from="1699945797349" duration="9629000" />
+      <updated>1700036631449</updated>
+      <workItem from="1700036633196" duration="14887000" />
+      <workItem from="1700122382282" duration="1056000" />
+      <workItem from="1700206397200" duration="3744000" />
+      <workItem from="1700223011552" duration="603000" />
+      <workItem from="1700466974290" duration="621000" />
+      <workItem from="1700467939474" duration="27795000" />
+      <workItem from="1700501619376" duration="5671000" />
+      <workItem from="1700553842190" duration="3904000" />
+      <workItem from="1700559461112" duration="1320000" />
+      <workItem from="1700560887129" duration="12942000" />
     </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="base" />
-    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
 </project>
