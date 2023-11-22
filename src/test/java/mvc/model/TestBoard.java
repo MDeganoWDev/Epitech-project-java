@@ -18,34 +18,37 @@ public class TestBoard {
 
     @Before
     public void setUp() {
-        board = new Board(10); // Vous pouvez ajuster la taille du plateau selon vos besoins
+        board = new Board(10);
     }
 
     @Test
     public void testPlaceShip() {
-        Ship ship = new Ship1("Test Ship"); // La longueur sera automatiquement définie à 1 pour Ship1
-
-        assertTrue(board.placeShip(0, 0, ship.getLength(), true)); // Place le navire horizontalement
-
+        Ship ship = new Ship1("Test Ship");
+        assertTrue(board.placeShip(0, 0, ship.getLength(), true));
         assertEquals(Board.Status.SHIP, board.getCellStatus(0, 0));
-        assertEquals(Board.Status.EMPTY, board.getCellStatus(0, 1)); // Vérifie qu'une case adjacente est vide
+        assertEquals(Board.Status.EMPTY, board.getCellStatus(0, 1));
     }
 
     @Test
     public void testPlaceAllShips() {
         Ship ship1 = new Ship1("Ship 1");
         Ship ship2 = new Ship2("Ship 2");
-
         List<Ship> ships = new ArrayList<>();
         ships.add(ship1);
         ships.add(ship2);
-
         board.placeAllShips(ships);
 
-        // Vérifie que tous les navires ont été placés correctement
         for (Ship ship : ships) {
+            int bowRow = ship.getBowRow();
+            int bowColumn = ship.getBowColumn();
+            boolean isHorizontal = ship.isHorizontal();
+
             for (int i = 0; i < ship.getLength(); i++) {
-                assertEquals(Board.Status.SHIP, board.getCellStatus(ship.getBowRow(), ship.getBowColumn() + i));
+                if (isHorizontal) {
+                    assertEquals(Board.Status.SHIP, board.getCellStatus(bowRow, bowColumn + i));
+                } else {
+                    assertEquals(Board.Status.SHIP, board.getCellStatus(bowRow + i, bowColumn));
+                }
             }
         }
     }
@@ -53,18 +56,18 @@ public class TestBoard {
     @Test
     public void testTakeShot() {
         Ship2 ship2 = new Ship2("Test Ship");
-        board.placeShip(1, 1, ship2.getLength(), true); // Place le navire horizontalement
+        board.placeShip(1, 1, ship2.getLength(), true);
 
-        assertTrue(board.takeShot(1, 1)); // Tirez sur une partie du navire
+        assertTrue(board.takeShot(1, 1));
         assertEquals(Board.Status.SHIP, board.getCellStatus(1, 1));
 
-        assertFalse(board.takeShot(1, 3)); // Tirez sur une case vide
+        assertFalse(board.takeShot(1, 3));
         assertEquals(Board.Status.MISS, board.getCellStatus(1, 3));
 
-        assertTrue(board.takeShot(1, 2)); // Tirez sur une partie du navire
+        assertTrue(board.takeShot(1, 2));
         assertEquals(Board.Status.SHIP, board.getCellStatus(1, 2));
 
-        assertFalse(ship2.isSunk()); // Vérifie que le navire est coulé après deux tirs
+        assertFalse(ship2.isSunk());
     }
 
 
@@ -79,47 +82,30 @@ public class TestBoard {
 
         board.placeAllShips(ships);
 
-        assertFalse(board.areAllShipsSunk()); // Aucun navire n'est encore touché
+        assertFalse(board.areAllShipsSunk());
 
-        // Tirez sur toutes les parties de tous les navires pour les couler
         for (Ship ship : ships) {
             for (int i = 0; i < ship.getLength(); i++) {
                 ship.shootAt(ship.getBowRow(), ship.getBowColumn() + i);
             }
         }
 
-        assertTrue(board.areAllShipsSunk()); // Tous les navires sont coulés
+        assertTrue(board.areAllShipsSunk());
     }
 
     @Test
     public void testResetBoard() {
         Ship ship = new Ship1("Test Ship");
-        board.placeShip(0, 0, ship.getLength(), true); // Place le navire horizontalement
+        board.placeShip(0, 0, ship.getLength(), true);
 
         board.resetBoard();
 
-        // Vérifie que toutes les cases sont à nouveau vides
         for (int row = 0; row < board.getRows(); row++) {
             for (int col = 0; col < board.getColumns(); col++) {
                 assertEquals(Board.Status.EMPTY, board.getCellStatus(row, col));
             }
         }
-
-        // Vérifie que la liste des navires est vide
         assertTrue(board.ships.isEmpty());
     }
-
-    /*@Test
-    public void testPlaceShipRandomly() {
-        Ship ship1 = new Ship1("Random Ship 1");
-        Ship ship2 = new Ship2("Random Ship 2");
-
-        board.placeShipRandomly(ship1);
-        board.placeShipRandomly(ship2);
-
-        // Vérifie que tous les navires ont été placés correctement
-        assertTrue(board.ships.contains(ship1));
-        assertTrue(board.ships.contains(ship2));
-    }*/
 
 }

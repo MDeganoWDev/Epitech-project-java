@@ -18,7 +18,7 @@ public class Portugal extends Faction{
         super.addShip(new Ship3("São Rafael"));
         super.addShip(new Ship3("Santa Maria da Graça"));
         super.addShip(new Ship3("Esperança"));
-        super.addShip(new Ship1("Ousado "));
-        super.addShip(new Ship1("Veloz "));
+        super.addShip(new Ship1("Ousado"));
+        super.addShip(new Ship1("Veloz"));
     }
 }

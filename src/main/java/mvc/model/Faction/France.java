@@ -20,7 +20,7 @@ public class France extends Faction{
         super.addShip(new Ship3("Le Triomphant"));
         super.addShip(new Ship2("Le Brave"));
         super.addShip(new Ship1("Le Fidèle"));
-        super.addShip(new Ship1("L'Agile "));
+        super.addShip(new Ship1("L'Agile"));
         super.addShip(new Ship1("Le Vigilant"));
     }
 }
