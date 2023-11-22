@@ -1,0 +1,154 @@
+C:\Users\talal\.jdks\openjdk-21.0.1\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.3\lib\idea_rt.jar=60663:C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.3\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.3\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.3\plugins\junit\lib\junit-rt.jar;C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\out\test\BatailleNavale;C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\out\production\BatailleNavale;C:\Users\talal\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\talal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar" com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 controller.TestGameController
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Before surrender: PLACING_SHIPS
+After surrender: PLACING_SHIPS
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Before selecting faction view: NOT_STARTED
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+After selecting faction view: SELECTING_FACTIONS
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Game status : GAME_IN_PROGRESS
+Game started
+AI strategy : main.java.mvc.model.AI.VeryEasyAi@595b007d
+Player 1 is attacking: 2, 3
+Miss!
+All ships sunk
+Player 2 is attacking: 2, 1
+Miss!
+All ships sunk
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Game status : GAME_IN_PROGRESS
+Game started
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Game status : GAME_IN_PROGRESS
+Game started
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Ship placed randomly
+Ship placed randomly
+Ship placed randomly
+Ship placed randomly
+Ship placed randomly
+Ship placed randomly
+Ship placed randomly
+All ships placed randomly
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Game initialized
+Game status : NOT_STARTED
+Game status : NOT_STARTED
+Switching to main menu view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : NOT_STARTED
+Switching to main menu view
+Game status : SELECTING_FACTIONS
+Switching to faction selection view
+Player 1 : name is Player 1, faction is Angleterre
+Player 2 : name is player 2, faction is France
+Grid size : 10
+Game status : PLACING_SHIPS
+Player Player 1 is placing ships
+Game status : GAME_IN_PROGRESS
+Game started
+AI strategy : main.java.mvc.model.AI.VeryHardAi@78123e82
+Player 2 is attacking: 5, 9
+Miss!
+
+Process finished with exit code 0

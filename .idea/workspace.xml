@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/epicSound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestHardAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestVeryEasyAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestVeryHardAi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestBarbeNoireResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestBarbeRousseResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestEasyResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestEspagneResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestGameControlleurResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestHardAiResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestMediumAiResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestVeryEasyResult.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-reports/TestVeryHardResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
-    <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/VeryEasyAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/VeryHardAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/HardAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/HardAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/MainMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainMenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +68,7 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
-
-  <component name="ProjectId" id="2YFajtTKfQDyP64txI7jLq7ergI" />
   <component name="ProjectId" id="2YCjnW6myuQlinGfO6cpi1rnQp3" />
-
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -71,67 +76,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;addingBackgroudImages&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;createMediumAI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomHomeConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.junit.jupiter.api" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="test.java.mvc.model" />
-    </key>
-  </component>
-
-  <component name="RunManager" selected="JUnit.TestBarbeRousse">
-  <component name="RunManager" selected="Application.Application">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-
-    "git-widget-placeholder": "addingBackgroudImages",
-    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
+    "git-widget-placeholder": "design",
+    "last_opened_file_path": "C:/Users/talal/Documents/Epitech/Battle Of Ship",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "git-widget-placeholder": "refactoringAiModele",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "AtomHomeConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
@@ -143,9 +101,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager">
-
+  <component name="RunManager" selected="JUnit.TestGameController">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -159,100 +119,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBarbeRousse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGameController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestBarbeRousse" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPortugal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGameController.testAiTurn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPortugal.testPortugalShips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
-      <option name="METHOD_NAME" value="testPortugalShips" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testAiTurn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGameController.testCombatLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestShip" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testCombatLoop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGameController.testSurrender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testSurrender" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestBarbeRousse" />
+        <item itemvalue="JUnit.TestGameController" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.TestPortugal" />
-        <item itemvalue="JUnit.TestPortugal.testPortugalShips" />
-        <item itemvalue="JUnit.TestShip" />
+        <item itemvalue="JUnit.TestGameController.testSurrender" />
+        <item itemvalue="JUnit.TestGameController.testAiTurn" />
+        <item itemvalue="JUnit.TestGameController.testCombatLoop" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="" />
-      <created>1700036631449</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1700036631449</updated>
-      <workItem from="1700036633196" duration="14887000" />
-      <workItem from="1700122382282" duration="1056000" />
-      <workItem from="1700206397200" duration="3744000" />
-      <workItem from="1700223011552" duration="603000" />
-      <workItem from="1700466974290" duration="621000" />
-      <workItem from="1700467939474" duration="25786000" />
-    </task>
-    <task id="LOCAL-00001" summary="base">
-      <option name="closed" value="true" />
-      <created>1699891256017</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699891256017</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
       <changelist id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base" />
       <created>1699901384370</created>
@@ -269,6 +210,16 @@
       <workItem from="1700123933703" duration="1197000" />
       <workItem from="1700415725410" duration="7697000" />
       <workItem from="1700469310389" duration="5507000" />
+      <workItem from="1700604024594" duration="2879000" />
+      <workItem from="1700642367426" duration="3052000" />
+    </task>
+    <task id="LOCAL-00001" summary="base">
+      <option name="closed" value="true" />
+      <created>1699891256017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699891256017</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

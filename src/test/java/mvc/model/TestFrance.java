@@ -13,10 +13,9 @@ public class TestFrance {
     public void testFranceShips() {
 
         France france = new France();
-        Faction franceFaction = france;
-        assertTrue(franceFaction.getShips().size() == 7);
+        assertTrue(france.getShips().size() == 7);
 
-        for (Ship ship : franceFaction.getShips()) {
+        for (Ship ship : france.getShips()) {
             assertTrue(ship.getLength() > 0);
 
             if (ship.getLength() == 4) {

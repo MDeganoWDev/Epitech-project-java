@@ -24,9 +24,7 @@ public class TestBoard {
     @Test
     public void testPlaceShip() {
         Ship ship = new Ship1("Test Ship");
-
         assertTrue(board.placeShip(0, 0, ship.getLength(), true));
-
         assertEquals(Board.Status.SHIP, board.getCellStatus(0, 0));
         assertEquals(Board.Status.EMPTY, board.getCellStatus(0, 1));
     }
@@ -35,11 +33,9 @@ public class TestBoard {
     public void testPlaceAllShips() {
         Ship ship1 = new Ship1("Ship 1");
         Ship ship2 = new Ship2("Ship 2");
-
         List<Ship> ships = new ArrayList<>();
         ships.add(ship1);
         ships.add(ship2);
-
         board.placeAllShips(ships);
 
         for (Ship ship : ships) {
@@ -111,17 +107,5 @@ public class TestBoard {
         }
         assertTrue(board.ships.isEmpty());
     }
-
-    /*@Test
-    public void testPlaceShipRandomly() {
-        Ship ship1 = new Ship1("Random Ship 1");
-        Ship ship2 = new Ship2("Random Ship 2");
-
-        board.placeShipRandomly(ship1);
-        board.placeShipRandomly(ship2);
-
-        assertTrue(board.ships.contains(ship1));
-        assertTrue(board.ships.contains(ship2));
-    }*/
 
 }

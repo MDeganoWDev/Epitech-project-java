@@ -8,9 +8,8 @@ public class TestBarbeNoire {
     @Test
     public void testBarbeNoireShips() {
         BarbeNoire barbeNoire = new BarbeNoire();
-        Faction barbeNoireFaction = barbeNoire;
-        assertTrue(barbeNoireFaction.getShips().size() == 8);
-        for (Ship ship : barbeNoireFaction.getShips()) {
+        assertTrue(barbeNoire.getShips().size() == 8);
+        for (Ship ship : barbeNoire.getShips()) {
             assertTrue(ship.getLength() > 0);
             if (ship.getLength() == 3) {
                 assertTrue(ship.getName().equals("Le Requin") || ship.getName().equals("Le Fantôme"));

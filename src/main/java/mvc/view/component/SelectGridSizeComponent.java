@@ -10,12 +10,16 @@ public class SelectGridSizeComponent extends JPanel {
 
     public SelectGridSizeComponent() {
         setLayout(new BorderLayout());
+        setBackground(new Color(52, 73, 94));
+        setForeground(Color.white);
 
         JLabel titleLabel = new JLabel("Select the grid size");
         titleLabel.setHorizontalAlignment(JLabel.CENTER);
+        titleLabel.setForeground(Color.white);
 
         numberField = new JTextField("10", 10);
         numberField.setHorizontalAlignment(JTextField.RIGHT);
+        customizeTextField(numberField);
 
         numberField.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent e) {
@@ -24,6 +28,7 @@ public class SelectGridSizeComponent extends JPanel {
                     e.consume();
                 }
             }
+
             public void keyReleased(KeyEvent e) {
                 if (!numberField.getText().isEmpty()) {
                     int value = Integer.parseInt(numberField.getText());
@@ -35,6 +40,7 @@ public class SelectGridSizeComponent extends JPanel {
                 }
             }
         });
+
         add(titleLabel, BorderLayout.NORTH);
         add(numberField, BorderLayout.CENTER);
     }
@@ -42,5 +48,13 @@ public class SelectGridSizeComponent extends JPanel {
     public int getNumber() {
         String text = numberField.getText();
         return text.isEmpty() ? 10 : Integer.parseInt(text);
+    }
+
+
+    private void customizeTextField(JTextField textField) {
+        textField.setBackground(new Color(44, 62, 80));
+        textField.setForeground(Color.white);
+        textField.setFont(new Font("Arial", Font.PLAIN, 14));
+        textField.setBorder(BorderFactory.createLineBorder(new Color(52, 152, 219), 2));
     }
 }

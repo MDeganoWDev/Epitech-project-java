@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"main.java.mvc.model.AI","c":"VeryEasyAi","l":"makeMove(Board)","u":"makeMove(main.java.mvc.model.Board)"},{"p":"main.java.mvc.model.AI","c":"VeryEasyAi","l":"VeryEasyAi()","u":"%3Cinit%3E()"}];updateSearchResults();
