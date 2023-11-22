@@ -11,6 +11,7 @@ import java.awt.*;
 
 public class GamePanel extends JPanel implements GameObserver {
     private final int boardSize;
+    Color brown = new Color(70, 42, 42);
     private  int cellSize;
     private final Board offensiveBoard1;
     private final Board defensiveBoard1;
@@ -193,7 +194,7 @@ public class GamePanel extends JPanel implements GameObserver {
                 switch (defensiveBoard1.getCellStatus(i, j)) {
                     case SHIP:
                         defensiveButtons.setOpaque(true);
-                        defensiveButtons.setBackground(Color.GRAY);
+                        defensiveButtons.setBackground(brown);
                         break;
                     case HIT:
                         defensiveButtons.setBackground(Color.RED);
@@ -220,7 +221,7 @@ public class GamePanel extends JPanel implements GameObserver {
                 switch (defensiveBoard1.getCellStatus(i, j)) {
                     case SHIP:
                         button.setOpaque(true);
-                        button.setBackground(Color.GRAY);
+                        button.setBackground(brown);
                         break;
                     case HIT:
                         button.setOpaque(true);

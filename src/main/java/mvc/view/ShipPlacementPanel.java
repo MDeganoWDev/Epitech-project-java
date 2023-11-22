@@ -13,6 +13,7 @@ import java.awt.event.MouseEvent;
 
 public class ShipPlacementPanel extends JPanel {
     private final Player player;
+    Color brown = new Color(70, 42, 42);
     private Image backgroundImage;
     private Ship selectedShip;
     private JPanel boardPanel;
@@ -200,7 +201,7 @@ public class ShipPlacementPanel extends JPanel {
             int col = i % columns;
 
             if (board.getCellStatus(row, col) == Board.Status.SHIP) {
-                cell.setBackground(Color.gray);
+                cell.setBackground(brown);
                 cell.setOpaque(true);
             } else {
                 cell.setBackground(null);
