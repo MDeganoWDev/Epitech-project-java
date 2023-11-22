@@ -15,6 +15,10 @@ public class MainMenuPanel extends JPanel {
     String filepath = "/main/resources/epic-sound.wav";
     private Image backgroundImage;
 
+    /**
+     * Constructor for the MainMenuPanel class
+     * Creates the main menu panel
+     */
     public MainMenuPanel() {
         initializeUI();
         try {
@@ -25,6 +29,11 @@ public class MainMenuPanel extends JPanel {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (backgroundImage != null) {
@@ -33,6 +42,10 @@ public class MainMenuPanel extends JPanel {
             g.drawImage(backgroundImage, x, y, this);
         }
     }
+
+    /**
+     * Initializes the UI
+     */
     private void initializeUI() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         add(Box.createVerticalGlue());
@@ -43,6 +56,10 @@ public class MainMenuPanel extends JPanel {
         createStyledButton("Quit", (e) -> System.exit(0));
         add(Box.createVerticalGlue());
     }
+
+    /**
+     * Creates the new game button
+     */
     private void createNewGameButton(){
         JButton buttonNewGame = new JButton("New Game");
         buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -60,6 +77,10 @@ public class MainMenuPanel extends JPanel {
         menuTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(menuTitle);
     }
+
+    /**
+     * Creates the quit button
+     */
     private void createQuitButton() {
         JButton buttonQuit = new JButton("Quit");
         buttonQuit.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -118,5 +139,4 @@ public class MainMenuPanel extends JPanel {
             e.printStackTrace();
         }
     }
-
 }

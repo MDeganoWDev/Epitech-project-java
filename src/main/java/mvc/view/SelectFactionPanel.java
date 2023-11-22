@@ -16,6 +16,10 @@ public class SelectFactionPanel extends JPanel {
     private JPanel difficultySelection;
     private Image backgroundImage;
 
+    /**
+     * Constructor for the SelectFactionPanel class
+     * Creates the select faction panel
+     */
     public SelectFactionPanel() {
         createExistingComponent();
         createValidateButton();
@@ -26,6 +30,10 @@ public class SelectFactionPanel extends JPanel {
         }
     }
 
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (backgroundImage != null) {
@@ -35,11 +43,13 @@ public class SelectFactionPanel extends JPanel {
         }
     }
 
+    /**
+     * Creates the existing components
+     */
     private void createExistingComponent() {
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-
-        // Grid Selection
+      
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -49,7 +59,6 @@ public class SelectFactionPanel extends JPanel {
         customizeComponent(this.gridSelection);
         add(gridSelection, gbc);
 
-        // Difficulty Selection
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 2;
@@ -59,7 +68,6 @@ public class SelectFactionPanel extends JPanel {
         customizeComponent(this.difficultySelection);
         add(difficultySelection, gbc);
 
-        // Faction 1
         gbc.gridx = 0;
         gbc.gridy = 2;
         gbc.insets = new Insets(0, 0, 200, 200); // Ajout d'un espace à droite
@@ -68,7 +76,6 @@ public class SelectFactionPanel extends JPanel {
         customizeComponent(this.faction1Selection);
         add(faction1Selection, gbc);
 
-        // Faction 2
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.insets = new Insets(0, 200, 200, 0); // Ajout d'un espace à gauche
@@ -78,6 +85,9 @@ public class SelectFactionPanel extends JPanel {
         add(faction2Selection, gbc);
     }
 
+    /**
+     * Creates the validate button
+     */
     private void createValidateButton() {
         GridBagConstraints gbc = new GridBagConstraints();
         JButton validateButton = new JButton("Start Game");
@@ -96,19 +106,17 @@ public class SelectFactionPanel extends JPanel {
             GameController.shipPlacementView();
         });
 
-        // Start Button
         gbc.gridx = 0;
         gbc.gridy = 3;
         gbc.gridwidth = 2;
-        gbc.insets = new Insets(40, 0, 0, 0); // Ajout d'un espace en haut
+        gbc.insets = new Insets(40, 0, 0, 0);
         gbc.anchor = GridBagConstraints.CENTER;
         add(validateButton, gbc);
     }
 
     private void customizeComponent(JPanel panel) {
-        // Personnalisation générale pour tous les JPanels
-        panel.setBackground(new Color(52, 73, 94)); // Couleur de fond
-        panel.setForeground(Color.white); // Couleur du texte
-        panel.setFont(new Font("Arial", Font.BOLD, 14)); // Police
+        panel.setBackground(new Color(52, 73, 94));
+        panel.setForeground(Color.white);
+        panel.setFont(new Font("Arial", Font.BOLD, 14));
     }
 }

@@ -8,6 +8,10 @@ import java.awt.*;
 public class SelectFactionComponent extends JPanel{
     private final JComboBox<String> comboBox;
 
+    /**
+     * Constructor for the SelectFactionComponent class
+     * @param title String
+     */
     public SelectFactionComponent(String title) {
         setLayout(new BorderLayout());
         setBackground(new Color(52, 73, 94));
@@ -42,6 +46,10 @@ public class SelectFactionComponent extends JPanel{
         add(comboBox, BorderLayout.CENTER);
     }
 
+    /**
+     * Gets the faction
+     * @return Faction object
+     */
     public Faction getFaction() {
         String factionName = (String) comboBox.getSelectedItem();
         assert factionName != null;

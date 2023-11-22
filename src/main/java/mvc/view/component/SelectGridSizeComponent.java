@@ -8,6 +8,9 @@ import java.awt.event.KeyEvent;
 public class SelectGridSizeComponent extends JPanel {
     private final JTextField numberField;
 
+    /**
+     * Constructor for the SelectGridSizeComponent class
+     */
     public SelectGridSizeComponent() {
         setLayout(new BorderLayout());
         setBackground(new Color(52, 73, 94));
@@ -45,6 +48,10 @@ public class SelectGridSizeComponent extends JPanel {
         add(numberField, BorderLayout.CENTER);
     }
 
+    /**
+     * Gets the number
+     * @return int
+     */
     public int getNumber() {
         String text = numberField.getText();
         return text.isEmpty() ? 10 : Integer.parseInt(text);
