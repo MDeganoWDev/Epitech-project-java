@@ -5,20 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run_app.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Ocean2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Wood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ship-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ship-vertical.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_app.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_app.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/BackgroundGamePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/controller/GameController$GameState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/controller/GameController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/controller/GameObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/controller/StartApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/AiStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/EasyAi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/HardAi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/MediumAi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/VeryEasyAi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/AI/VeryHardAi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Board$Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/Angleterre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/BarbeNoire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/BarbeRousse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/Espagne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/Faction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/France.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Faction/Portugal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Ship/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Ship/Ship1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Ship/Ship2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Ship/Ship3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/model/Ship/Ship4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/GamePanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/GamePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/MainMenuPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/SelectFactionPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/ShipPlacementPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/ShipPlacementPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/VictoryPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/component/BackgroundGamePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/component/SelectDifficultyComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/component/SelectFactionComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/component/SelectGridSizeComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/main/java/mvc/view/component/SelectGridSizeComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/ShipPlacementPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/ShipPlacementPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +66,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MDeganoWDev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MDeganoWDev&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -69,12 +100,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "addingReadMe",
-    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/test-reports",
+    "git-widget-placeholder": "addingBackground",
+    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3494253",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
@@ -84,10 +118,11 @@
       <recent name="main.java.mvc.view.component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\test-reports" />
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\test-reports" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale" />
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\test" />
     </key>
@@ -146,7 +181,8 @@
       <workItem from="1700501619376" duration="5671000" />
       <workItem from="1700553842190" duration="3904000" />
       <workItem from="1700559461112" duration="1320000" />
-      <workItem from="1700560887129" duration="17752000" />
+      <workItem from="1700560887129" duration="18820000" />
+      <workItem from="1700639630064" duration="5811000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ import main.java.mvc.controller.GameController;
 import main.java.mvc.model.Board;
 import main.java.mvc.model.Player;
 import main.java.mvc.model.Ship.Ship;
+import main.java.mvc.view.component.BackgroundGamePanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,6 +13,7 @@ import java.awt.event.MouseEvent;
 
 public class ShipPlacementPanel extends JPanel {
     private final Player player;
+    private Image backgroundImage;
     private Ship selectedShip;
     private JPanel boardPanel;
     private JList<Ship> shipList;
@@ -28,6 +30,22 @@ public class ShipPlacementPanel extends JPanel {
         this.player = player;
         initializeComponents();
         initializeButton();
+        try {
+            backgroundImage = new ImageIcon("src/main/resources/Ocean.jpg").getImage();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Paints the background image
+     * @param g Graphics object
+     */
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (backgroundImage != null) {
+            g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
+        }
     }
 
     /**
@@ -38,14 +56,25 @@ public class ShipPlacementPanel extends JPanel {
 
         shipListModel = new DefaultListModel<>();
         player.getFaction().getShips().forEach(shipListModel::addElement);
+
         shipList = new JList<>(shipListModel);
         shipList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         shipList.addListSelectionListener(e -> selectedShip = shipList.getSelectedValue());
-        add(new JScrollPane(shipList), BorderLayout.WEST);
+
+        shipList.setOpaque(false);
+        shipList.setBackground(new Color(0, 0, 0, 0));
+
+        JScrollPane scrollPanel = new JScrollPane(shipList);
+        scrollPanel.setOpaque(false);
+        scrollPanel.setBackground(new Color(0, 0, 0, 0));
+
+        JPanel shipListPanel = new BackgroundGamePanel("src/main/resources/Wood.jpg");
+
+        shipListPanel.add(scrollPanel);
+        add(shipListPanel, BorderLayout.WEST);
 
         boardPanel = createBoardPanel(player.getOwnBoard());
         add(boardPanel, BorderLayout.CENTER);
-
     }
 
     /**
@@ -127,9 +156,11 @@ public class ShipPlacementPanel extends JPanel {
      */
     private JPanel createBoardPanel(Board board) {
         JPanel panel = new JPanel(new GridLayout(board.getRows(), board.getColumns()));
+        panel.setOpaque(false);
         for (int row = 0; row < board.getRows(); row++) {
             for (int col = 0; col < board.getColumns(); col++) {
                 JPanel cell = new JPanel();
+                cell.setOpaque(false);
                 cell.setBorder(BorderFactory.createLineBorder(Color.black));
                 int finalRow = row;
                 int finalCol = col;
@@ -170,8 +201,10 @@ public class ShipPlacementPanel extends JPanel {
 
             if (board.getCellStatus(row, col) == Board.Status.SHIP) {
                 cell.setBackground(Color.gray);
+                cell.setOpaque(true);
             } else {
                 cell.setBackground(null);
+                cell.setOpaque(false);
             }
         }
     }
