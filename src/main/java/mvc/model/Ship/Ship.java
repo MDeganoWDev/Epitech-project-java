@@ -22,8 +22,6 @@ public class Ship {
     private final int length;
     private boolean horizontal;
     private boolean[] hit;
-    private final Image imageHorizontal;
-    private final Image imageVertical;
 
     /**
      * Constructor for Ship.
@@ -35,8 +33,6 @@ public class Ship {
         this.length = length;
         this.hit = new boolean[length];
         this.horizontal = false;
-        this.imageHorizontal = Toolkit.getDefaultToolkit().getImage("src/main/resources/ship-horizontal.png");
-        this.imageVertical = Toolkit.getDefaultToolkit().getImage("src/main/resources/ship-vertical.png");
     }
 
     /**
@@ -171,19 +167,5 @@ public class Ship {
      */
     public String toString() {
         return "Size: " + getLength() + " | " + getName();
-    }
-
-    /**
-     * Gets the image of the ship.
-     * if the ship is horizontal, returns the horizontal image.
-     * if the ship is vertical, returns the vertical image.
-     * @return the image of the ship.
-     */
-    public Image getImage(){
-        if(horizontal){
-            return imageHorizontal;
-        }else{
-            return imageVertical;
-        }
     }
 }
