@@ -1,6 +1,7 @@
 package main.java.mvc.view;
 
 import main.java.mvc.controller.GameController;
+import main.java.mvc.view.component.FadedBackgroundLabel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -40,13 +41,20 @@ private Image backgroundImage;
      * @param winner String
      */
     private void initializeUI(String winner) {
-        JLabel victoryLabel = new JLabel(winner + " won the game!");
+        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+
+        JLabel victoryLabel = new FadedBackgroundLabel(winner + " won the game!");
         victoryLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        victoryLabel.setFont(new Font("Arial", Font.BOLD, 40));
+        victoryLabel.setForeground(Color.WHITE);
+        add(Box.createVerticalGlue());
         add(victoryLabel);
 
+        add(Box.createVerticalStrut(80));
         createMainMenuButton();
         createNewGameButton();
         createQuitButton();
+        add(Box.createVerticalGlue());
     }
 
     /**

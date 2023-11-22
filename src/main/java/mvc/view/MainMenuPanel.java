@@ -12,7 +12,6 @@ import java.awt.event.MouseEvent;
 import java.util.function.Consumer;
 
 public class MainMenuPanel extends JPanel {
-    String filepath = "/main/resources/epic-sound.wav";
     private Image backgroundImage;
 
     /**
@@ -23,8 +22,6 @@ public class MainMenuPanel extends JPanel {
         initializeUI();
         try {
             backgroundImage = new ImageIcon("src/main/resources/MainMenu.png").getImage();
-            playMusic(filepath);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -58,20 +55,11 @@ public class MainMenuPanel extends JPanel {
     }
 
     /**
-     * Creates the new game button
+     * Creates a new title
      */
-    private void createNewGameButton(){
-        JButton buttonNewGame = new JButton("New Game");
-        buttonNewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
-        buttonNewGame.addActionListener(e -> {
-            GameController.selectFactionView();
-        });
-        add(buttonNewGame);
-    }
-
     private void createNewTitle(){
-        Font titleFont = new Font("Comic Sans MS", Font.BOLD, 36);
         JLabel menuTitle = new JLabel("Battle Of Ship");
+        Font titleFont = new Font("Comic Sans MS", Font.BOLD, 36);
         menuTitle.setFont(titleFont);
         menuTitle.setForeground(Color.WHITE);
         menuTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -79,20 +67,12 @@ public class MainMenuPanel extends JPanel {
     }
 
     /**
-     * Creates the quit button
+     * Creates a new styled button
+     * @param text String
+     * @param action Consumer<ActionEvent>
      */
-    private void createQuitButton() {
-        JButton buttonQuit = new JButton("Quit");
-        buttonQuit.setAlignmentX(Component.CENTER_ALIGNMENT);
-        buttonQuit.addActionListener(e -> {
-            System.exit(0);
-        });
-        add(buttonQuit);
-    }
-
     private void createStyledButton(String text, Consumer<ActionEvent> action) {
         JButton button = new JButton(text) {
-            @Override
             protected void paintComponent(Graphics g) {
                 if (getModel().isPressed()) {
                     g.setColor(new Color(53, 124, 165));
@@ -113,30 +93,14 @@ public class MainMenuPanel extends JPanel {
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         button.addMouseListener(new MouseAdapter() {
-            @Override
             public void mouseEntered(MouseEvent e) {
                 button.setForeground(new Color(255, 255, 255));
             }
-
-            @Override
             public void mouseExited(MouseEvent e) {
                 button.setForeground(Color.WHITE);
             }
         });
-
         button.addActionListener(e -> action.accept(e));
-
         add(button);
-    }
-
-    private void playMusic(String filepath) {
-        try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResource(filepath));
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

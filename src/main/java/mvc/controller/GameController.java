@@ -229,7 +229,7 @@ public class GameController {
     public static void selectFaction (Faction faction1, Faction faction2, int gridSize) {
         try {
             player1 = new Player("Player 1", faction1, gridSize);
-            player2 = new Player("player 2", faction2, gridSize);
+            player2 = new Player("Player 2", faction2, gridSize);
             boardSize = gridSize;
 
             player2.setAI(true);
@@ -390,5 +390,4 @@ public class GameController {
     public static int getBoardSize() {
         return boardSize;
     }
-
 }

@@ -114,6 +114,10 @@ public class SelectFactionPanel extends JPanel {
         add(validateButton, gbc);
     }
 
+    /**
+     * Customizes the component
+     * @param panel JPanel
+     */
     private void customizeComponent(JPanel panel) {
         panel.setBackground(new Color(52, 73, 94));
         panel.setForeground(Color.white);

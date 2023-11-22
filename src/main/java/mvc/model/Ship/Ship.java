@@ -35,8 +35,8 @@ public class Ship {
         this.length = length;
         this.hit = new boolean[length];
         this.horizontal = false;
-        this.imageHorizontal = Toolkit.getDefaultToolkit().getImage("src/main/resources/images/ship-horizontal.png");
-        this.imageVertical = Toolkit.getDefaultToolkit().getImage("src/main/resources/images/ship-vertical.png");
+        this.imageHorizontal = Toolkit.getDefaultToolkit().getImage("src/main/resources/ship-horizontal.png");
+        this.imageVertical = Toolkit.getDefaultToolkit().getImage("src/main/resources/ship-vertical.png");
     }
 
     /**

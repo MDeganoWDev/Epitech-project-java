@@ -103,8 +103,8 @@ public class GamePanel extends JPanel implements GameObserver {
 
         Dimension panelSize = new Dimension(boardSize * this.cellSize, boardSize * this.cellSize);
 
-        offensivePanel = new BackgroundGamePanel("src/main/resources/Ocean.jpg");
-        defensivePanel = new BackgroundGamePanel("src/main/resources/Ocean.jpg");
+        offensivePanel = new BackgroundGamePanel("src/main/resources/Ocean2.jpg");
+        defensivePanel = new BackgroundGamePanel("src/main/resources/Ocean2.jpg");
 
         offensivePanel.setLayout(new GridLayout(boardSize, boardSize));
         defensivePanel.setLayout(new GridLayout(boardSize, boardSize));

@@ -31,7 +31,7 @@ public class ShipPlacementPanel extends JPanel {
         initializeComponents();
         initializeButton();
         try {
-            backgroundImage = new ImageIcon("src/main/resources/Ocean.jpg").getImage();
+            backgroundImage = new ImageIcon("src/main/resources/Ocean2.jpg").getImage();
         } catch (Exception e) {
             e.printStackTrace();
         }
