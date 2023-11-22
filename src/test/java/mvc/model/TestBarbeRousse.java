@@ -9,7 +9,6 @@ public class TestBarbeRousse {
     @Test
     public void testBarbeRousseShips() {
         BarbeRousse barbeRousse = new BarbeRousse();
-        //Faction barbeRousseFaction = barbeRousse;
         assertTrue(barbeRousse.getShips().size() == 7);
         for (Ship ship : barbeRousse.getShips()) {
             assertTrue(ship.getLength() > 0);

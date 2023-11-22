@@ -11,12 +11,10 @@ public class TestAngleterre {
 
     @Test
     public void testAngleterreShips() {
-
         Angleterre angleterre = new Angleterre();
-        Faction angleterreFaction = angleterre;
-        assertTrue(angleterreFaction.getShips().size() == 8);
+        assertTrue(angleterre.getShips().size() == 8);
 
-        for (Ship ship : angleterreFaction.getShips()) {
+        for (Ship ship : angleterre.getShips()) {
             assertTrue(ship.getLength() > 0);
             if (ship.getLength() == 4) {
                 assertEquals("HMS Victory", ship.getName());

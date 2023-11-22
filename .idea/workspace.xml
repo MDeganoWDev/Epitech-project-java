@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
+    <change beforePath="$PROJECT_DIR$/src/main/resources/epicSound.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
@@ -85,10 +89,7 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
-
-  <component name="ProjectId" id="2YFajtTKfQDyP64txI7jLq7ergI" />
   <component name="ProjectId" id="2YCjnW6myuQlinGfO6cpi1rnQp3" />
-
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -96,56 +97,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;addingBackgroudImages&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;createMediumAI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomHomeConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.junit.jupiter.api" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="test.java.mvc.model" />
-    </key>
-  </component>
-
-  <component name="RunManager" selected="JUnit.TestBarbeRousse">
-  <component name="RunManager" selected="Application.Application">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "design",
+    "last_opened_file_path": "C:/Users/talal/Documents/Epitech/Battle Of Ship",
     "git-widget-placeholder": "testAndDoc",
     "git-widget-placeholder": "addingBackgroudImages",
     "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
@@ -153,11 +112,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "git-widget-placeholder": "refactoringAiModele",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "AtomHomeConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
@@ -168,6 +125,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DMatt\Documents\Epitech courses\Pool-java\Project\Bataille navale\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Application">
@@ -185,6 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGameController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
     <configuration name="All in BatailleNavale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -197,59 +158,61 @@
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestBarbeRousse" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPortugal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGameController.testAiTurn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPortugal.testPortugalShips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestPortugal" />
-      <option name="METHOD_NAME" value="testPortugalShips" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testAiTurn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestShip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGameController.testCombatLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestShip" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testCombatLoop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGameController.testSurrender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BatailleNavale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <option name="METHOD_NAME" value="testSurrender" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -260,8 +223,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestBarbeRousse" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.TestGameController" />
+        <item itemvalue="JUnit.TestGameController.testSurrender" />
+        <item itemvalue="JUnit.TestGameController.testAiTurn" />
+        <item itemvalue="JUnit.TestGameController.testCombatLoop" />
         <item itemvalue="JUnit.All in BatailleNavale" />
         <item itemvalue="JUnit.TestPortugal" />
         <item itemvalue="JUnit.TestPortugal.testPortugalShips" />
@@ -312,6 +278,16 @@
       <workItem from="1700123933703" duration="1197000" />
       <workItem from="1700415725410" duration="7697000" />
       <workItem from="1700469310389" duration="5507000" />
+      <workItem from="1700604024594" duration="2879000" />
+      <workItem from="1700642367426" duration="3625000" />
+    </task>
+    <task id="LOCAL-00001" summary="base">
+      <option name="closed" value="true" />
+      <created>1699891256017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699891256017</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

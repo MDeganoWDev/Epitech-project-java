@@ -11,10 +11,9 @@ public class TestPortugal {
     @Test
     public void testPortugalShips() {
         Portugal portugal = new Portugal();
-        Faction portugalFaction = portugal;
-        assertTrue(portugalFaction.getShips().size() == 6);
+        assertTrue(portugal.getShips().size() == 6);
 
-        for (Ship ship : portugalFaction.getShips()) {
+        for (Ship ship : portugal.getShips()) {
             assertTrue(ship.getLength() > 0);
             if (ship.getLength() == 4) {
                 assertEquals("São Gabriel", ship.getName());
