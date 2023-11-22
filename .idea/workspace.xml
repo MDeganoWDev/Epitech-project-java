@@ -7,18 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
+    <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base" />
     <change beforePath="$PROJECT_DIR$/src/main/resources/epicSound.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
+    <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
+    <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
+    <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPlayer.java" afterDir="false" />
+    <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestStrawhat.java" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/EasyAi.java" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/AI/MediumAi.java" afterDir="false" />
+    <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFaction.java" afterDir="false" />
     <list default="true" id="4ffba0ff-aa36-4f03-84d4-4e82a21e2679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -60,7 +60,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/GameObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/Ship/Ship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,28 +98,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "design",
-    "last_opened_file_path": "C:/Users/talal/Documents/Epitech/Battle Of Ship",
-    "git-widget-placeholder": "testAndDoc",
-    "git-widget-placeholder": "addingBackgroudImages",
-    "last_opened_file_path": "C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "AtomHomeConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;design&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/talal/Documents/Epitech/Battle Of Ship&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;testAndDoc&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;addingBackgroudImages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DMatt/Documents/Epitech courses/Pool-java/Project/Bataille navale/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomHomeConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.java.mvc.view.component" />
@@ -130,8 +131,7 @@
       <recent name="C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartApp">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -145,25 +145,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGameController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-    <configuration name="All in BatailleNavale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-    <configuration name="TestBarbeRousse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.mvc.controller.StartApp" />
       <module name="BatailleNavale" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controller.*" />
+          <option name="PATTERN" value="main.java.mvc.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGameController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,22 +175,6 @@
       <option name="PACKAGE_NAME" value="controller" />
       <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
       <option name="METHOD_NAME" value="testAiTurn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestGameController.testCombatLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BatailleNavale" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.TestGameController" />
-      <option name="METHOD_NAME" value="testCombatLoop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,20 +197,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.StartApp" />
       <item itemvalue="Application.Application" />
-      <item itemvalue="JUnit.All in BatailleNavale" />
+      <item itemvalue="JUnit.TestGameController" />
+      <item itemvalue="JUnit.TestGameController.testAiTurn" />
+      <item itemvalue="JUnit.TestGameController.testSurrender" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.TestGameController" />
         <item itemvalue="JUnit.TestGameController.testSurrender" />
         <item itemvalue="JUnit.TestGameController.testAiTurn" />
-        <item itemvalue="JUnit.TestGameController.testCombatLoop" />
-        <item itemvalue="JUnit.All in BatailleNavale" />
-        <item itemvalue="JUnit.TestPortugal" />
-        <item itemvalue="JUnit.TestPortugal.testPortugalShips" />
-        <item itemvalue="JUnit.TestShip" />
       </list>
     </recent_temporary>
   </component>
