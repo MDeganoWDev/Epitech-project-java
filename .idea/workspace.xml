@@ -8,39 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd92b182-4f02-43a6-a3c4-0366eda6c87d" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/epicSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/controller/TestGameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestHardAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestVeryEasyAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestVeryHardAi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestBarbeNoireResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestBarbeRousseResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestEasyResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestEspagneResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestGameControlleurResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestHardAiResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestMediumAiResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestVeryEasyResult.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-reports/TestVeryHardResult.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_11_2023_13_27__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/MainMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/MainMenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/SelectFactionPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectDifficultyComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectFactionComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/view/component/SelectGridSizeComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestAngleterre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeNoire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBarbeRousse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEasyAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestEspagne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestFrance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestMediumAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mvc/model/TestPortugal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-reports/TestFranceResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/epicSound.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +73,7 @@
       <recent name="C:\Users\talal\Documents\Epitech\T-JAV-501-TLS_2\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestGameController">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Application" />
       <module name="BatailleNavale" />
@@ -184,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGameController" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.TestGameController" />
         <item itemvalue="JUnit.TestGameController.testSurrender" />
         <item itemvalue="JUnit.TestGameController.testAiTurn" />
         <item itemvalue="JUnit.TestGameController.testCombatLoop" />
@@ -211,7 +179,7 @@
       <workItem from="1700415725410" duration="7697000" />
       <workItem from="1700469310389" duration="5507000" />
       <workItem from="1700604024594" duration="2879000" />
-      <workItem from="1700642367426" duration="3052000" />
+      <workItem from="1700642367426" duration="3625000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <option name="closed" value="true" />

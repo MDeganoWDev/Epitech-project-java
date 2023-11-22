@@ -12,7 +12,7 @@ import java.awt.event.MouseEvent;
 import java.util.function.Consumer;
 
 public class MainMenuPanel extends JPanel {
-    String filepath = "/main/resources/epicSound.wav";
+    String filepath = "/main/resources/epic-sound.wav";
     private Image backgroundImage;
 
     public MainMenuPanel() {
